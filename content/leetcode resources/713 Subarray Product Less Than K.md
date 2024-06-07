@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 713. Subarray Product Less Than K
 
 This problem gives the impression of being difficult but is actually pretty chill. 🗿
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 5. Longest Palindromic Substring
 
 We want to find the longest palindromic substring, where a substring implies that all characters have to be consecutive, and palindromic implies that the string is mirrored from the center.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 509. Fibonacci Number (pending) (2)
 
 [Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/) 
 

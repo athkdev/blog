@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 567. Permutation in String
 
 The problem asks us to determine if any permutation of string $S_1$ exists in string $S_2$. There are several possible intuitions for solving this problem: one is to check if every substring in $S_2$ is an anagram of string  $S_1$. We can achieve this by checking if $sorted(S_1)$ equals $sorted(S_2)$. But checking it for every substring would mean a runtime of $O(n^2 *log (n))$ - coding this solution gives us a Leetcode TLE (Time limit exceeded error)
 

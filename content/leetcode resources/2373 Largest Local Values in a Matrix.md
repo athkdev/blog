@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2373. Largest Local Values in a Matrix
 
 Fairly easy to overthink this problem. I mean no issues if you want to further analyze it and but it’s an easy.
 

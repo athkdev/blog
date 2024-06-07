@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 647. Palindromic Substrings
 
 This problem is similar to [5. Longest Palindromic Substring](5%20Longest%20Palindromic%20Substring%20efe5cf985e734acba7f8cf36798c7fd3.md)
 

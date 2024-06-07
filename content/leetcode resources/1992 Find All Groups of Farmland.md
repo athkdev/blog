@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1992. Find All Groups of Farmland
 
 The problem is straightforward and since the constraints are smaller, one can brute force through it.
 

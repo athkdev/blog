@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 463. Island Perimeter
 
 We have seen countless other problems where we are given a grid and are required to traverse an island. But this is not as complex as a DFS in a matrix.
 The trick to an efficient algorithm for this problem is understanding how we can get the running perimeter of the entire island as we traverse.

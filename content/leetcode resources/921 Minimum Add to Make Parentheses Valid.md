@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 921. Minimum Add to Make Parentheses Valid
 
 Well, this is very similar to the Valid Parentheses problem, where you have to return true or false if the parentheses string is valid or not respectively. This one’s the same, just that you have to return how many parentheses change would it take to make the string valid.
 

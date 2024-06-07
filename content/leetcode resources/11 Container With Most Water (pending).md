@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 11. Container With Most Water (pending)
 
 # Code:
 

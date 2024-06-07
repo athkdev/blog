@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1137. N-th Tribonacci Number (pending) (1)
 
 [Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/) 
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1561. Maximum Number of Coins You Can Get
 
 The problem can come off as vague at the first glance since Alice gets the maximum piles, we get the second maximum piles and Bob gets the remaining ones. One would get confused as to thinking you are required to give one pile out of three to Bob, but that’s false. 
 

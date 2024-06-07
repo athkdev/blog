@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 143. Reorder List
 
 The problem requires us to reorder the given linked list in such a way that
 

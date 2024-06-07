@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2744. Find Maximum Number of String Pairs
 
 Brute force through out since the input size is quite small (`1 <= words.length <= 50`)
 

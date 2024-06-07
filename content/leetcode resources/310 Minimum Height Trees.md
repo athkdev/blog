@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 310. Minimum Height Trees
 
 One approach that might come to your head (at least it did for me) is to do a BFS from each node $0...(N-1)$. Doing BFS will gives us the maximum distance between two nodes in each of the graphs. But this gives a TLE, and fails like 10 cases for the problem as of April 23$^{th}$ 2024.
 

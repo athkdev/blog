@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 165. Compare Version Numbers
 
 This problem asks use to compare two version strings and return an answer accordingly. These versions are inspired by software versions where a version string could be “1.0”, “1.0.1”, “2.3.4” and so on.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2315. Count Asterisks
 
 We are required to count the number of asterisks between two pairs of `|`. Think of a pair of `|` as a wall within which you cannot see anything, and you can see everything between two such walls.
 

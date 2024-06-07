@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2710. Remove Trailing Zeros From a String
 
 lol
 

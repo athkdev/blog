@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 46. Permutations
 
 This is a very (very) crucial problem because if forms the base of many other problems. It uses the fundamental algorithm pattern called **backtracking**. Don’t let the name scare you, if you have solved any easy tree problems chances are pretty good that you’ve already used a backtracking algorithm. Yes, the DFS! Depth First Search is a backtracking algorithm as by definition it brute-forces through all possible outcomes. 
 

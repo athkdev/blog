@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 102. Binary Tree Level Order Traversal
 
 Very straightforward, a level order traversal is the same thing as BFS. You arrive at a node, put it’s neighbours in a queue to be visited later. Make sure to also maintain a another loop inside your main BFS loop so that you keep track of “levels”.
 

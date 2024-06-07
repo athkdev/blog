@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 110. Balanced Binary Tree
 
 The problem states: a height-balanced binary tree is a tree in which the difference of heights of children of a node should not exceed 1.
 

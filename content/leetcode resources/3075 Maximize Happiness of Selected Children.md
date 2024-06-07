@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 3075. Maximize Happiness of Selected Children
 
 The problem requires us to maximize happiness of a group with `k` children. The caveat is that for every child included in the group, the happiness for all other children decrements by 1, though it caps at 0 and cannot be negative.
 

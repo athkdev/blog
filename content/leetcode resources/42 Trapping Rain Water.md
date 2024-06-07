@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 42. Trapping Rain Water
 
 This is the famously dreaded problem which is also asked quiet frequently in interviews. It’s dreaded because of how it manages engineers to overthink a solution because it has a leetcode hard tag. 
 

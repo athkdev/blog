@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1208. Get Equal Substrings Within Budget
 
 This problem can be done with DP but there’s no need for it because it can be done with just a sliding window that too in O(N) time. (I’ll update here with the DP solution some time in the future)
 

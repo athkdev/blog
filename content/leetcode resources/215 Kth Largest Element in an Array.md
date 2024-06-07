@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 215. Kth Largest Element in an Array
 
 As we have seen earlier, questions that require you the k-th minimum/maximum/largest/smallest are a great way to exercise your heap datastructure skills.
 

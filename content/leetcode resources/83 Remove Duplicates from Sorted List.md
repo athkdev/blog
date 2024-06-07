@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 83. Remove Duplicates from Sorted List
 
 The problem requires us to iterate a sorted list and remove any duplicates possible. It’s a straightforward problem, but don’t get confused like I did. I did not read the “sorted” and thought it was a regular list. So I used a `set` to keep track of duplicates. 
 

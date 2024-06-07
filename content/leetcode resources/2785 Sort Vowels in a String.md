@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2785. Sort Vowels in a String
 
 We iterate over the input string and keep track of all indices and their vowels. Then we sort them lexicographically so that characters with lower ASCII are ordered first than their counterparts with greater ASCII.
 

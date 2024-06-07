@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 213. House Robber II
 
 The constraint that they have inserted into this one just requires us to tweak the input arrays. We can just use the solution from House Robber, just change its inputs cleverly.
 

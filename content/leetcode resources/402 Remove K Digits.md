@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 402. Remove K Digits
 
 # Code:
 

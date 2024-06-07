@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 138. Copy List with Random Pointer
 
 The prompt of the question might confuse you for the first minute or so - but upon closer inspection you can see that it’s a pretty straightforward linked list problem. 
 

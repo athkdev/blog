@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1496. Path Crossing
 
 This is a problem that involves just simulating what’s stated in the problem. There’s no hidden trick, or optimization - simply simulate a point moving from $(0,0)$ to the directions given in the string. We use a set to store all visited points starting with  $(0,0)$. If we come across any point that’s already visited, we return True, else False.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1903. Largest Odd Number in String
 
 A number would be odd if the number at the unit place `num[-1]` is odd. Check from the end of the string, once we come across an odd number, we stop and return.
 

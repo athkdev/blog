@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 680. Valid Palindrome II
 
 Interesting problem with an interesting approach. Well, the problem statement is regular but the approach is nice.
 

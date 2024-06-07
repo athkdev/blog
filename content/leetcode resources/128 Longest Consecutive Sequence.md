@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 128. Longest Consecutive Sequence
 
 The problem requires us to find the longest consecutive sequence from a given array. But we need to come up with a $O(N)$ solution: that means sorting the array is out of question since it takes $O(n * logN)$ time.
 

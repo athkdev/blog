@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 49. Group Anagrams
 
 Word A is an anagram of word B, if there exists a one-to-one relation for each character between the two words. In simple words, the bag of letters in word A must be identical to bag of letters in word B.
 

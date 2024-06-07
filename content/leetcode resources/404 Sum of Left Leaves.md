@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 404. Sum of Left Leaves
 
 We have to return the sum of all left-leaf values in the tree. This means the left leaf of every subtree. So, it could be on a right child node, just that it has to be a leaf, and it has to be a left leaf at that.
 

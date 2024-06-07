@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1544. Make The String Great
 
 This is an easy question and a pretty straightforward one at that. So you want to remove all instances of string sequences that are in the format `‘lower, upper’` OR `‘upper, lower’` adjacent to each other.
 

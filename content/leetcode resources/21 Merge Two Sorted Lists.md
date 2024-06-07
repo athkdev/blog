@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 21. Merge Two Sorted Lists
 
 Very fundamental problem. If you are well-versed with linked lists, it might come of as a very straightforward problem - otherwise, it’s a great learning exercise.
 

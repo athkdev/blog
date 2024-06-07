@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 424. Longest Repeating Character Replacement
 
 The problem asks to find the longest substring with repeating characters that contains $k$ characters that could be replaced with the current maximum frequency character.
 

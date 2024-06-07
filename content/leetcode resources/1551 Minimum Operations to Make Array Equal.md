@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1551. Minimum Operations to Make Array Equal
 
 We are required to calculate the minimum number of operations required to make the array equal. Now, the input array that we are given always stays the same just that the length changes as per input. Every element in the array $ar[i] = (2*i) + 1$, so the array becomes $ar = [1, 3, 5, 7, 9, ...., (2 *(n - 1)) + 1]$.
 

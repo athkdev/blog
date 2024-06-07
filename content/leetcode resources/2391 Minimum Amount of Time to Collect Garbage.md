@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2391. Minimum Amount of Time to Collect Garbage
 
 This problem uses the technique of prefix sum as well like a few of other problems you might have come across in this list.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2788. Split Strings by Separator
 
 This problem is just an implementation detail and does not require any algorithmic thinking whatsoever. But there’s a peculiarity in it regarding how regex works.
 

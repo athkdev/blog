@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2149. Rearrange Array Elements by Sign
 
 We just brute force our way into the matrix, do bound checks for our values and just calculate the required hour glass sum, and finally update our max sum with every iteration.
 

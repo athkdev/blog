@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2287. Rearrange Characters to Make Target String
 
 The problem asks us to find which how many times can the target string be formed from the source string. This is clearly a frequency problem. We keep track of frequency of all characters in a map for both strings. Then the minimum number of characters of string $target$ present in string $source$ is the answer. This is because if any character falls short, we can’t make a complete target string: thus won’t be considered for a valid answer.
 

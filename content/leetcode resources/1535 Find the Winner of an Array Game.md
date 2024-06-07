@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1535. Find the Winner of an Array Game
 
 Tricky question: it tricks you into believing that you need to look out for `k iterations` - BUT WHEN IN REALITY ONCE A NUMBER LOSES TO ANOTHER NUMBER, IT’S NEVER GOING TO WIN SO YOU CAN TRASH IT.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2913. Subarrays Distinct Element Sum of Squares I
 
 The problem asks us to find calculate the sum of squares of distinct number of characters in each subarray in the input array `nums`.
 

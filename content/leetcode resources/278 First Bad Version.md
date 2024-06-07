@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 278. First Bad Version
 
 Given `n` versions we are required to find the first bad version since every following version after the first bad version is bad. We know for a fact that `n`th version is bad, we need to find out when did it start going bad.
 

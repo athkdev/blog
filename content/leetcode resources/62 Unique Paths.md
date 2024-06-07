@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 62. Unique Paths
 
 This problem is pretty straightforward - it needs us to calculate how many paths exist between two points on a grid, specifically, from the top-left to bottom-right. This information is crucial, think of it this way - at each step, a `node` starting from top-left will have two choices moving forward. It can either go one step down OR can go one step right, till it reaches any of the boundary.
 

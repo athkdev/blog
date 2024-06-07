@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1143. Longest Common Subsequence (Pending)
 
 [Problem link 🔗](https://leetcode.com/problems/longest-common-subsequence/) 
 

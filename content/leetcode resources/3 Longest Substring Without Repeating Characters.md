@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 3. Longest Substring Without Repeating Characters
 
 To solve a problem of this sort, I must understand the concept of a `sliding window` . When you have linear data structures to work with like arrays, lists, or strings - you can always maintain a window (fixed or sliding) and move it over the array. Think of it like this - when you are iterating over an array one element at a time, you are (in a way) maintaining a window of `n = 1`. 
 

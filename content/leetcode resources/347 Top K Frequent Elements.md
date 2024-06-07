@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 347. Top K Frequent Elements
 
 There are two approaches that simultaneously come to my mind, but both of them have the same time complexity. The fundamental differences between those approaches is that one uses a heap and the other uses sorting. (psst I like that heap one more ;p )
 

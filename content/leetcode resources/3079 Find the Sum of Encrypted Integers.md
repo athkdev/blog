@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 3079. Find the Sum of Encrypted Integers
 
 Fairly straightforward, the problem wants us to find the sum of the array elements but before calculating, the elements must be “encrypted.” As per their definition, a number is encrypted if all the digits in the number are replaced by the maximum digit in that number.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1046. Last Stone Weight
 
 USE A MAX HEAP. Since Python doesn't support max heaps fully (they do have a few private methods for max heaps, they are very unstable and are recommended not to use - it's not even in their documentation). So I used Java `PriorityQueue<Integer>`
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 623. Add One Row to Tree
 
 The problem asks to add a row to a tree. Trying to reverse engineer this, I understand that adding a row is the same as adding nodes at a single depth in every branch from root till leaf.
 

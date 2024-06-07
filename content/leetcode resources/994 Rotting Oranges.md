@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 994. Rotting Oranges
 
 We are given a 2D integer matrix $grid$ with $m == grid.length$ and $n == grid[i].length$ where $grid[i] \in \{0, 1, 2\}$ where 0 represents an empty cell, 1 represents an a fresh orange and 2 represents a rotten orange.
 

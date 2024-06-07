@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 152. Maximum Product Subarray
 
 We need to find the maximum product subarray present in a given input array. This has a very sweet linear solution which is fundamental to a lot of problems on leetcode.
 

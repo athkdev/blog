@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2265. Count Nodes Equal to Average of Subtree
 
 Calculating the average of the entire tree separately and returning is incorrect - putting it out there because the problem can be misconstrued in that manner.
 

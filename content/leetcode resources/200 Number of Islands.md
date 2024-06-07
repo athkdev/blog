@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 200. Number of Islands
 
 The problem presents us with a grid consisting of `0`’s (water) and `1`’s (land). We are required to find total number of islands in the grid. An island is a collection of `1`’s next to each other - either vertically or horizontally - no, diagonal relations. But as part of a homework/revision once you solve this problem, try solving it but include diagonal relations too - it could be solved using just minor changes.
 

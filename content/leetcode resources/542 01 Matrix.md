@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 542. 01 Matrix
 
 We are required to replace each $1$ in the given array with the distance to the nearest $0$.
 

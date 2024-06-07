@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2828. Check if a String Is an Acronym of Words
 
 Note: they say the order of the characters in the generated acronym matters, so one can’t just count frequencies. No need to overthink this solution, just store first letter of every `word` in `words`, and check if it’s similar to `s`.
 

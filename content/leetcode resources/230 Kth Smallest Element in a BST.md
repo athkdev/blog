@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 230. Kth Smallest Element in a BST
 
 We are required to find the k-th smallest element in a binary search tree. As we have seen in many other problems of the type “k-th smallest/largest/minimum/maximum” - they are perfect to use utilize your min/max heap knowledge.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 2428. Maximum Sum of an Hourglass
 
 We just brute force our way into the matrix, do bound checks for our values and just calculate the required hour glass sum, and finally update our max sum with every iteration.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1221. Split a String in Balanced Strings
 
 We need to come up with the maximum number of substrings with an equal number of ‘L’ and ‘R’ characters. There would be multiple answers but since they have mentioned **maximum** we need to find the smallest substrings with equal number of ‘L’s and ‘R’s.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 33. Search in Rotated Sorted Array
 
 In the problem, we are given a sorted array. But this array is rotated at some point. Rotating an array implies that at a random point, the array was broken off into two subarrays and their positions were exchanged while rejoining the subarrays.
 

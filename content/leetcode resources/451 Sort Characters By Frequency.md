@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 451. Sort Characters By Frequency
 
 This straightforward implementation problem focuses on the frequency of the characters in the input string. We need to sort the input string with decreasing frequency characters.
 

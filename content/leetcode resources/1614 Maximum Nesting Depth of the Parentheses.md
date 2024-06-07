@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1614. Maximum Nesting Depth of the Parentheses
 
 This is a straightforward question and very similar to the [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) problem. Except it’s way easier because you don’t have to worry about different parentheses, you only have the `(` parentheses.
 

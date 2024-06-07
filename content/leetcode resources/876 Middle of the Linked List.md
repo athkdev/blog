@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 876. Middle of the Linked List
 
 This is a standard problem in the realm of linked lists - the fast-slow pointer technique helps us to find the element in the middle of the linkedlist without having to iterate the entire list atleast once.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 988. Smallest String Starting From Leaf
 
 Carry out usual `DFS` and keep track of current string that is getting created. Once you reach `leaves`, update the `smallest` current string. We are using an external variable for this which is why we have to use the `nonlocal` variable.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 387. First Unique Character in a String
 
 We need to find the first unique character in the given input string. For this, we iterate over the string and create a frequency map/array. I usually like to use a size 26 array, if I am given only lowercase or only uppercase string. A map is easier to go with if it's a case-sensitive string.
 

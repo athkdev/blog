@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 322. Coin change
 
 We are required to find the fewest number of coins that we can pick from an array `coins[]` where they can be summed to exactly `amount` . Important note: we CAN repeat any coin we’d like. For eg. `coins = [1, 2, 5], amount = 11`  here we can use 5 twice and then 1 once to achieve the desired sum.
 

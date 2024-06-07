@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 53. Maximum Subarray
 
 So, at every new element in the array we make two choices A) either add the new element to the current running sum OR B) start a new current sum altogether. Now, starting a new current sum is equivalent to starting a new sub-array.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 50. Pow(x, n)
 
 Here, we define a few base-cases that pertain to the rule of math. But the brute force approach to reduce n by 1 every function call and calculate the power gives a TLE. 
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 78. Subsets
 
 We are required to create all subsets in a given array including an empty subset.  This is a classic backtracking use case. Backtracking is an algorithm where you try out all possibilities. 
 

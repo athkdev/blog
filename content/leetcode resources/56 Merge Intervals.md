@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 56. Merge Intervals
 
 `Tag: sort array, check if interval merge into previous interval`
 

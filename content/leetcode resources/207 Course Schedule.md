@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 207. Course Schedule
 
 This is a graph problem. Given is `numCourses` (graph vertices) and and edge list. Each edge consists of a courses to be taken and a prerequisite for it. $[C_i,P_i]$ - here Ci is a course that requires you to complete the prerequisite Pi.
 

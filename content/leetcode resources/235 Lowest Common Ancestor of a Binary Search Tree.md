@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 235. Lowest Common Ancestor of a Binary Search Tree
 
 So, the lowest common ancestor for any two nodes (`p` and `q`) in a BST is termed as the minimum value node that contains both `p` and `q` in their sub trees. The lowest common ancestor for any node is itself or some previous node.
 

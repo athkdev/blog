@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 144. Binary Tree Preorder Traversal
 
 This is a fundamental tree problem that requires us to collect the preorder traversal of a tree in a list and return it. A preorder traversal is a tree/graph traversal where you visit the first node (root in a case of a tree), and then it’s children.
 

@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 383. Ransom Note
 
 We are given two strings `ransomNote` and `magazine`. We are required to calculate if the `ransomNote` can be built using the `magazine`. You may use a character only $x$ times while building `ransomNote`, if it occurs $x+n$ times where $n>=0$.
 

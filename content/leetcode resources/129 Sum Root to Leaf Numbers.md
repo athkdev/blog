@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 129. Sum Root to Leaf Numbers
 
 A very good problem that tests your fundamental knowledge of how trees work. The algorithm is pretty straightforward, until you come across a leaf node, just keep track of all node’s values visited in the form of a number (or a string). Once you reach a leaf, return the number stored, and call the function recursively on other nodes.
 

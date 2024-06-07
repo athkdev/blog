@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1572. Matrix Diagonal Sum
 
 The problem asks to find the sum of both diagonals in a square matrix. This is fairly straightforward. Now, if you are a programmer who knows concepts such as DFS, BFS you would realize that you don’t need to traverse the matrix in a $O(N^2)$ manner, you can just get the diagonals.
 

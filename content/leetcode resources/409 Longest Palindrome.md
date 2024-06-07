@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 409. Longest Palindrome
 
 Well, think how would one go about building a palindrome. Any palindrome must be mirror identical from the middle i.e. something like `abccba`, OR `racecar` . But there’s an edge case, any palindrome can be of even or odd length. When it’s an even length - in the center there are two alphabets present but in the case of an odd length - in the center there is a single character present.
 

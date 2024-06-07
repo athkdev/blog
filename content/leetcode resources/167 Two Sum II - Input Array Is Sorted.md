@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 167. Two Sum II - Input Array Is Sorted
 
 Like 2Sum, instead of maintaining a hashmap (which would be $O(N)$ memory), try to use constant space. Now, unlike 2Sum the input array is sorted. Sure you can sort the array in the original 2Sum too, but it’s a famous problem for hashmaps.
 

@@ -4,8 +4,6 @@ tags:
   - medium
 ---
 
-# 846. Hand of Straights
-
 This problem is fairly simple but the solution that I used here (taken and studied from lee on Leetcode) made me scratch my head a lot.
 
 A basic idea is that we greedily form groups and if we are not able to form groups, i.e. `freq[i+j] == 0`, where `i = hand_number`, `j = position_of_group_member_to_be_formed`.

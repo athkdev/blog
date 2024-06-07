@@ -5,8 +5,6 @@ tags:
 ---
 
 
-# 1027. Longest Arithmetic Subsequence (Pending)
-
 [Problem link 🔗](https://leetcode.com/problems/longest-arithmetic-subsequence/description/) 
 
 This problem is a celebrity on Leetcode - just like 2Sum. Because it builds fundamental knowledge of dynamic programming that is useful in a whole lot of other problems. A general approach toward solving algorithmic problems is to try and arrive at a brute force, unoptimised solution. The next step is to think how you can optimize it. Now, optimization techniques are dependent on the type of algorithm technique you have used. Since we use dynamic programming here we use A. memoisation OR B. tabulation. Because any one of the two is fine, one can chose the most readable one. I personally always stick with memoisation with a recursive solution - but there have been times when I have used tabulation.

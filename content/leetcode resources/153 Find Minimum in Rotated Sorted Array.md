@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 153. Find Minimum in Rotated Sorted Array
 
 This problem is similar to [leetcode 33](33%20Search%20in%20Rotated%20Sorted%20Array%201aebacf96c0d47639c3098c375fc83b1.md). We want the minimum element in a rotated sorted array, this rotation could have happened n times. Basically, we want to find the pivot or rotation point.
 

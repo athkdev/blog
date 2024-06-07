@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 1143. Longest Common Subsequence
 
 # Code:
 

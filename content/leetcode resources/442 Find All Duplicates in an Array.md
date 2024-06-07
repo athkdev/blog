@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 442. Find All Duplicates in an Array
 
 The problem asks us to find the duplicates in the array - which is a not so difficult problem but it’s a medium, so there must be some thing else. They want us to find duplicates, but in constant space.
 

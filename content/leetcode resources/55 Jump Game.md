@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 55. Jump Game
 
 `Tag: starting at the back of the array`
 

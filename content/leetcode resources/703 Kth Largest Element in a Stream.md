@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 703. Kth Largest Element in a Stream
 
 Here, the `stream` means that numbers could be added onto it.
 

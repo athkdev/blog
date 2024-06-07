@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 238. Product of Array Except Self
 
 We want the result to contain an array where $R[i] = \prod_{0}^{R.length} R[n]$ where $i != n$.
 

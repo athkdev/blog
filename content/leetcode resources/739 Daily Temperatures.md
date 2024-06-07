@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 739. Daily Temperatures
 
 The problem requires us to return an array that denotes the number of days from one day to the next hot day; we are given an array of temperatures on days.
 

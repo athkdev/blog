@@ -5,7 +5,6 @@ tags:
 ---
 
 
-# 746. Min Cost Climbing Stairs
 
 We need to calculate the minimum cost required to go to climb all the way to the top of the stairs. Now, the criteria as to what counts as climbing is you can either climb one step or two steps at  a time.
 
