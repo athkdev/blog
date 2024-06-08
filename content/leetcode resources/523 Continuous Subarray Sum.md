@@ -10,7 +10,6 @@ It uses the concept of hashing and hash collision and actually leverages it's ch
 
 You store the modulo operator results for all elements, and once a hash collision has been detected that means we have come across a `multiple` before. We simply check if the length `left - right + 1` between current index and the last known index for the same multiple is 2 (as per problem parameters), we return True else False.
 
-
 # Code:
 
 ### Python3
@@ -25,12 +24,12 @@ def checkSubarraySum(self, nums: List[int], k: int) -> bool:
     cur_sum = 0
     for i,n in enumerate(nums):
         cur_sum += n
-        
+
         if cur_sum % k in remainders:
             if i - remainders[cur_sum % k] >= WINDOW_LEN: return True
         else:
             remainders[cur_sum % k] = i
-        
+
 
     return False
 ```
