@@ -11,7 +11,7 @@ It uses the concept of hashing and hash collision and actually leverages it's ch
 
 You store the modulo operator results for all elements, and once a hash collision has been detected that means we have come across a `multiple` before. We simply check if the length `left - right + 1` between current index and the last known index for the same multiple is 2 (as per problem parameters), we return True else False.
 
-# Code:
+# Code
 
 ### Python3
 
