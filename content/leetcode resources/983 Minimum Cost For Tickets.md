@@ -75,38 +75,6 @@ def mincostTickets(self, days: List[int], costs: List[int]) -> int:
   The memory usage is $O(N)$ since we use the `collections.defaultdict` object to store memoised values.
 
 
-def mincostTickets(self, days: List[int], costs: List[int]) -> int:
-    N = len(days)
-
-    def dfs(arr: List[int], start: int, memo: Dict[int, int]) -> int:
-        '''
-        returns the minimum cost of tickets by exploring all three possibilities (daily/weekly/monthly pass) on a day
-        '''
-
-        if start in memo: return memo[start]
-
-        if start >= N:
-            return 0
-        
-        daily = costs[0] + dfs(arr, start + 1, memo)
-
-        currentDay = start
-        while currentDay < N and days[currentDay] < days[start] + 7: currentDay += 1
-
-        weekly = costs[1] + dfs(arr, currentDay, memo)
-
-        currentDay = start
-        while currentDay < N and days[currentDay] < days[start] + 30: currentDay += 1
-
-        monthly = costs[2] + dfs(arr, currentDay, memo)
-        
-
-        memo[start] = min(daily, weekly, monthly)
-
-        return memo[start]
-
-    
-    return dfs(days, 0)
 — A
 
 [GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
