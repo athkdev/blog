@@ -34,6 +34,35 @@ def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
     return construct_tree(0, len(nums)-1)
 ```
 
+### Go
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func sortedArrayToBST(nums []int) *TreeNode {
+    return constructBST(0, len(nums)-1, nums)
+}
+
+func constructBST(left, right int, arr []int) *TreeNode {
+    if left > right {
+        return nil
+    }
+
+    mid := (left + right) / 2
+    root := &TreeNode{Val: arr[mid]}
+
+    root.Left = constructBST(left, mid - 1, arr)
+    root.Right = constructBST(mid + 1, right, arr)
+
+    return root
+}
+```
+
 ### Big O Analysis
 
 - **Runtime**
