@@ -2,7 +2,7 @@
 title: 108 Convert Sorted Array to Binary Search Tree
 date: 2024-06-26
 tags:
-  - medium
+  - easy
   - binary search tree
   - recursion
 ---
