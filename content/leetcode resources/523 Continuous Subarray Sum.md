@@ -37,11 +37,11 @@ def checkSubarraySum(self, nums: List[int], k: int) -> bool:
 
 ### Big O Analysis
 
-- Runtime
+- **Runtime**
 
   The runtime complexity here is $O(N)$ since we are visiting all elements in the array only once.
 
-- Memory
+- **Memory**
 
   The memory usage is $O(N)$ since we use the `collections.defaultdict` object to store multiple and modulos.
 
