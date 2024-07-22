@@ -13,11 +13,11 @@ An ancestor in a graph is a node that can be used to traverse further to some ot
 
 So, since graphs are recursive structures, you may find some sub-problem that would solve our purpose.
 
-Such as, the number of ancestors a node `u` has, is the number of ancestors all of it's past ancestors has. For this one would require to know the parents of a child node. Luckily, we have a DAG and are given an edge list - we can just store the graph in a reverse order.
+Such as, the number of ancestors a node `u` has, is the number of ancestors all of it's past ancestors have. For this one would require to know the parents of a child node. Luckily, we have a DAG and are given an edge list - we can just store the graph in a reverse order.
 
 But you can imagine, when we calculate an ancestor list `anc_list_u` for a node `u` and when `u` will be used as an ancestor for some other node `v`. The ancestor list `anc_list_v` for node `v` would consist duplicates of all ancestors in `anc_list_u` and `anc_list_v`.
 
-So to tackle that, our sub-problem computes ancestors in a set to avoid duplicates. The problem also asks use that every thing is sorted, so we throw in a `sorted()` there too.
+So to tackle that, our sub-problem computes ancestors in a set to avoid duplicates. The problem also asks us that every thing is sorted, so we throw in a `sorted()` there too.
 
 
 # Code
