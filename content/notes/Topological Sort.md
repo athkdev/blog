@@ -5,6 +5,7 @@ tags:
   - graphs
 ---
 
+(pending)
 
 Topological Sort - is not actually traditional sorting algorithm - well, it is sorting, but not traditionally like on arrays. Well then, why and where is it used?
 
