@@ -13,14 +13,25 @@ We iterate over the array and then keep updating a maximum profit variable. This
 ### Python
 
 ```python
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        maxProfit,lowest=0,float('inf')
+def maxProfit(self, prices: List[int]) -> int:
 
-        for i,price in enumerate(prices):
-            lowest=min(lowest,price)
-            maxProfit=max(maxProfit,price-lowest)
-        return maxProfit
+    minBuy = 10**5
+    profit = -10**5
+
+    for p in prices:        
+        '''
+        instead of keeping track of buy and sell
+
+        make use of properties of a for loop -> it ways moves forward
+
+        with that in mind, keep track of current minimum buying rate -> update this minimum if a new minimum is found
+
+        also update the current profit -> if a new better profit is found
+        '''
+        minBuy = min(p, minBuy)
+        profit = max(profit, p - minBuy)
+    
+    return max(profit, 0)
 ```
 
 ### Big O Analysis
