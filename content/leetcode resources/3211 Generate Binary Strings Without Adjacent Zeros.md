@@ -42,7 +42,7 @@ def validstrings(self, n: int) -> list[str]:
 
 - **Runtime**
 
-  The runtime complexity here is $O(N^2)$ since in worst case scenario for every call we would be making two new calls to generate a string.
+  The runtime complexity here is $O(2^N)$ since there can be $2^N$ combinations.
 
 - **Memory**
 
