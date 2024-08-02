@@ -33,6 +33,8 @@ $$
 
 OR Python-ically speaking, `pow(2, right-left, MOD)` where MOD is (10\*\*9 + 7) and not mandatory. According to Python docs, `pow(2, right-left, MOD)` is more performant than `pow(2, right-left) % MOD`.
 
+PS: This problem is very similar to the famous [[/leetcode resources/1 Two Sum]] - take a look at that too.
+
 # Code
 
 ### Python3
