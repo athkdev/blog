@@ -27,7 +27,7 @@ N mod X = [(A mod X) + (B mod X) + (C mod X)] mod X
 where N = A + B + C
 ```
 
-Usually this is done just so the author can verify our answers with theirs without actually dealing with large numbers since that's computationally heavy. Is there a change that our actual answer is incorrect but MOD-ing it turns it into a correct answer? Well, yes. But according to theory of cryptography and the Pigeonhole Principle - that's rare (but possible). Since we are not just verifying a single test cases but hundreds of them - it's near impossible for all test cases to just 'coincidentally' pass. Hence, this works.
+Usually this is done just so the author can verify our answers with theirs without actually dealing with large numbers since that's computationally heavy. Is there a change that our actual answer is incorrect but MOD-ing it turns it into a correct answer? Well, yes. But according to theory of cryptography and the [Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle) - that's rare (but possible, it's called a [hash collision](https://en.wikipedia.org/wiki/Hash_collision)). Since we are not just verifying a single test case but hundreds of them - it's near impossible for all test cases to just 'coincidentally' pass. Hence, this works.
 
 # Code
 
