@@ -1,15 +1,15 @@
 ---
 title: 3016 Minimum Number of Pushes to Type Word II
-date: 2024-08-05
+date: 2024-08-09
 tags:
-  - easy
+  - medium
 ---
 
 # Intuition
 
-The basic intuition here is that to compute the `minimum` pushes - we need to assign the highest frequency characters to initial (first) push of keys. 
+This problem is sequel problem to [[/leetcode resources/1974 Minimum Time to Type Word Using Special Typewriter]] - check that out first so this problem will get easy.
 
-We do that greedily over elements in descending order of their frequencies.
+We greedily assign the most frequently typed characters to the starting positions of the keys (eg. first, second, etc). 
 
 # Code
 
@@ -28,12 +28,12 @@ def minimumPushes(self, word: str) -> int:
 
     res = 0
 
-    times = 1  # position for a key
+    times = 1
     keys = 8
     for k, v in count.items():
         if keys <= 0:
-            keys = 8
-            times += 1
+            keys = 8 # if all keys are exhausted, replenish the keys
+            times += 1  # start assigning the keys to the next positions
         
         res += (v * times)
         keys -= 1
@@ -45,11 +45,11 @@ def minimumPushes(self, word: str) -> int:
 
 - **Runtime**
 
-  The runtime complexity here is $O(N * log N)$ since we are sorting the array.
+  The runtime complexity here is $O(U)$ where U is the unique characters in the input string `word`.
 
 - **Memory**
 
-  The memory usage is $O(N)$ since we use a dictionary to store frequencies of characters.
+  The memory usage is $O(N)$ since we are using a `collections.Counter` which inherently is a dictionary.
 
 — A
 
