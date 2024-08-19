@@ -3,7 +3,7 @@ title: 226 Invert Binary Tree
 date: 2024-08-19
 tags:
   - medium
-  i = binary tree
+  - binary tree
 ---
 
 # Intuition
