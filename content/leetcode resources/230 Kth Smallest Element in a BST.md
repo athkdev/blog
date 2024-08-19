@@ -1,53 +1,57 @@
 ---
 title: 230 Kth Smallest Element in a BST
+date: 2024-08-19
 tags:
-    - medium
+  - medium
+  - bst
 ---
 
+# Intuition
+
+We need the k-th smallest element in the BST. k-th smallest means think of an array with elements sorted ascendingly. Then `arr[k]` is the answer.
+
+Well, to solve this problem we could put all the elements in an array, sort it and return `arr[k]`. But it's unnecessary. Why? Because we are working with a `Binary Search Tree` which is a special type of `Binary Tree` where every node left to it's parent node is smaller. Similarly, every node right to it's parent node is greater w.r.t. it's parent node.
+
+We could use this property to get sorted elements during traversal in `O(N)` time. Think about it, if my left nodes are smaller than the parent, and right nodes are greater than the parent - my left-most node would be the smallest element in the tree, and right-most element would be the largest element.
 
 
-We are required to find the k-th smallest element in a binary search tree. As we have seen in many other problems of the type “k-th smallest/largest/minimum/maximum” - they are perfect to use utilize your min/max heap knowledge.
+Meaning - to get elements in a sorted order, one must recursively make all `left` calls, work on them, then finally make all `right` calls. Sounds like `in-order` traversal.
 
-Iterate over the tree, add all nodes to a max-heap, poll (remove) excess elements if size of heap goes over k. Then just return the element at the top of the heap.
+# Code
 
-# Code:
+### Python3
 
-### Java
+```python
+def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    self.k = k
+    self.res = 0
 
-```java
-class Solution {
-    PriorityQueue<TreeNode> kSmallest = new PriorityQueue<>((a,b) -> b.val - a.val);
-    public int kthSmallest(TreeNode root, int k) {
-        populateKSmallest(root,k);
+    def dfs(node, cnt):
+        if not node: return
 
-        return kSmallest.peek().val;
-    }
+        dfs(node.left, cnt)
 
-    private void populateKSmallest(TreeNode root,int k) {
-        if (root == null) return;
+        self.k -= 1
 
-        kSmallest.add(root);
+        if self.k == 0:
+            self.res = node.val
+            return
 
-        if (kSmallest.size() > k) {
-            kSmallest.poll();
-        }
-
-        populateKSmallest(root.left,k);
-        populateKSmallest(root.right,k);
-    }
-}
+        dfs(node.right, cnt)
+    
+    dfs(root, 0)
+    return self.res
 ```
 
 ### Big O Analysis
 
-- Runtime
-    
-    The runtime complexity here is `O(N)` as since we would visit all nodes atleast once.
-    
-- Memory
-    
-    The memory usage is `O(k)` since we use a priority queue which will be always filled with k nodes.
-    
+- **Runtime**
+
+  The runtime complexity here is $O(N)$ where N is number of nodes, but best case scenario is `O(K)`, where we return after k smallest elements have been traversed.
+
+- **Memory**
+
+  The memory usage is $O(1)$ since we are not using any extra data structure (other than the input tree itself).
 
 — A
 
