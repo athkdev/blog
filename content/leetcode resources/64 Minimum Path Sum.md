@@ -1,52 +1,52 @@
 ---
 title: 64 Minimum Path Sum
-date: 2024-08-09
+date: 2024-09-11
 tags:
   - medium
-  - dp
+  - dynamic programming
 ---
 
-# Intuition
+We need to enumerate all paths and then keep track of the smallest path sum. 
 
-The sub-problem here is computing the minimum sum from the previous elements. There are two ways you can arrive at a new element - it's from a previous top element or a previous left element.
 
-There's an exception for top row and left most row - there you can only get to an element from the left (for the top row) or from the top (for the left row).
+Again, let's use `reduction` to reduce this problem into smaller problems. To comupte the minimum path sum from `(0,0)` to `(m,n)`, we would first need to know the minimum path sum till `(m-1, n)` and `(m, n-1)`.
 
-Well, since computing minimum sum from previous (top or left) is an overlapping subproblem - this problem is categorized as a dynamic programming problem.
 
-> Note: another way to look at this is - from my current element, where can I go next? Well you can go to the right element or the bottom element.
+Once we have reduced our problem, we can put into a recursive statement and we are done.
 
 # Code
 
 ### Python3
 
 ```python
-def minPathSum(self, grid: List[List[int]]) -> int:
-    
-    m, n = len(grid), len(grid[0])
+  def minPathSum(self, grid: List[List[int]]) -> int:
+      
 
-    for i in range(1, m):
-        grid[i][0] += grid[i-1][0]
-    
-    for i in range(1, n):
-        grid[0][i] += grid[0][i-1]
+      @functools.cache
+      def compute_sum(i, j):
+          if i < 0 or j < 0:
+              return sys.maxsize
+          
+          # if i == 0 and j == 0:
+          #     return grid[i][j]
+          
+          return grid[i][j] + min(compute_sum(i-1, j), compute_sum(i, j-1))
+      
 
-    for i in range(1, m):
-        for j in range(1, n):
-            grid[i][j] = grid[i][j] + min(grid[i-1][j], grid[i][j-1])
+      m, n = len(grid), len(grid[0])
 
-    return grid[-1][-1]
+      return compute_sum(m-1, n-1)
 ```
 
 ### Big O Analysis
 
 - **Runtime**
 
-  The runtime complexity here is $O(N^2)$ since we would be visiting all elements in the matrix.
+  The runtime complexity here is $O(N)$ since are caching - which reduces the $O(2^N)$ to linear time.
 
 - **Memory**
 
-  The memory usage is $O(1)$ since we are not using any extra data structure - we are modifying the matrix in place.
+  The memory usage is $O(N)$ since we are caching.
 
 — A
 
