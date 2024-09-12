@@ -1,55 +1,47 @@
 ---
 title: 62 Unique Paths
+date: 2024-09-11
 tags:
-    - medium
+  - medium
+  - dynamic programming
 ---
 
+This is a classic dynamic programming problem. We need to count how many ways exist when we start from the top-left cell in the grid and make way till the bottom-right cell. 
 
 
-This problem is pretty straightforward - it needs us to calculate how many paths exist between two points on a grid, specifically, from the top-left to bottom-right. This information is crucial, think of it this way - at each step, a `node` starting from top-left will have two choices moving forward. It can either go one step down OR can go one step right, till it reaches any of the boundary.
+Let's think about reduction. Reduction is the process of breaking down a problem into smaller sub-problems. To calculate the number of ways to reach cell `(m, n)` - is basically the number of ways to reach cell `(m-1, n)` PLUS the number of ways to reach cell `(m, n-1)`.
 
-As you would have guessed, let’s first think of a brute-force approach. Here, a sub-problem can be defined as trying to find a path from `grid[m-1][n-1]` to `grid[0][0]`, where `m` and `n` are current node positions. Now, the base case here can be thought of as “keep on finding the node until `m-1` and `n-1` both eventually reach 0”. 
+Note: the number of ways to go from `(0,0)` to `(m, n)` == the number of ways to go from `(m, n)` to `(0, 0)`.
 
-Let’s visualize this using the image below.
+# Code
 
-![Untitled](62%20Unique%20Paths%203531fe3a901d4d0bb5cadea7cf240b07/Untitled.png)
+### Python3
 
-Let `small_grid = 2 x 2`, `medium_grid = 2 x 3`, and `large_grid = 2 x 4`.
+```python
+  def uniquePaths(self, m: int, n: int) -> int:
 
-The `small_grid`  generates two paths to get to it’s destination, `medium_grid` generates three paths and `large_grid` generates four such paths. Now, carefully observe and you would notice that they are all nested. A `large_grid` is made using a `medium_grid`, which is made using a `small_grid`. Voila! There we have our sub-problem neatly visualized. 
+      # (m-1, n) OR (m, n-1)
 
-For eg. A `medium_grid` is formed when the `small_grid[0][1]` is extended one position right, then one down, as well as the `small_grid[1][1]` is extended one position right.
+      @functools.cache
+      def compute(i, j):  
+          if i == 0 or j == 0:
+              return 1
+          
+          return compute(i-1, j) + compute(i, j-1)
+      
 
-# Code:
-
-### C++
-
-```cpp
-class Solution {
-public:
-    int generator(int m, int n, vector<vector<int>>& memo) {
-        if (memo[m][n] != -1) return memo[m][n];
-
-        if (m < 0 || n < 0) return 0;
-        else if (m==1 || n==1) return 1;
-        else {
-            return memo[m][n] = generator(m-1,n,memo) + generator(m,n-1,memo);
-        } 
-    }
-
-    void populate(vector<vector<int>>& memo,int m,int n) {
-        memo.resize(m+1, vector<int>(n+1,-1));
-    }
-
-    int uniquePaths (int m, int n) {
-        vector<vector<int>> memo;
-        populate(memo,m,n);
-
-        return generator(m,n,memo);
-    }
-
-};
+      return compute(m-1, n-1)
 ```
+
+### Big O Analysis
+
+- **Runtime**
+
+  The runtime complexity here is $O(N)$ with the caching - without caching it's $O(2^N)$.
+
+- **Memory**
+
+  The memory usage is $O(N)$ since the caching mechanism would require some sort of dictionary.
 
 — A
 
