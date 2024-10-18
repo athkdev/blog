@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "📂 athk.dev",
+    pageTitle: "athk's blogs",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,9 +22,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Roboto",
-        body: "Karla",
-        code: "Roboto Mono",
+        header: "Abel",
+        body: "Abel",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
