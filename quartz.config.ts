@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "athk's blogs",
     enableSPA: true,
     enablePopovers: true,
-    analytics: { provider: 'google', tagId: 'G-Z5N5CRN31C' },
+    analytics: null,
     locale: "en-US",
     baseUrl: "athk.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],

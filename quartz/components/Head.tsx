@@ -44,6 +44,7 @@ export default (() => {
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}
+      <script src="https://www.googletagmanager.com/gtag/js?id=G-Z5N5CRN31C" async></script>
       </head>
     )
   }
