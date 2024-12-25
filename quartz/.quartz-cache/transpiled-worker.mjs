@@ -3057,20 +3057,23 @@ function renderPage(cfg, slug, componentData, components, pageResources2) {
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en";
   const doc = /* @__PURE__ */ jsxs("html", { lang, children: [
     /* @__PURE__ */ jsx4(Head, { ...componentData }),
-    /* @__PURE__ */ jsx4("body", { "data-slug": slug, children: /* @__PURE__ */ jsxs("div", { id: "quartz-root", class: "page", children: [
-      /* @__PURE__ */ jsxs(Body2, { ...componentData, children: [
-        LeftComponent,
-        /* @__PURE__ */ jsxs("div", { class: "center", children: [
-          /* @__PURE__ */ jsxs("div", { class: "page-header", children: [
-            /* @__PURE__ */ jsx4(Header2, { ...componentData, children: header.map((HeaderComponent) => /* @__PURE__ */ jsx4(HeaderComponent, { ...componentData })) }),
-            /* @__PURE__ */ jsx4("div", { class: "popover-hint", children: beforeBody.map((BodyComponent) => /* @__PURE__ */ jsx4(BodyComponent, { ...componentData })) })
+    /* @__PURE__ */ jsxs("body", { "data-slug": slug, children: [
+      /* @__PURE__ */ jsxs("div", { id: "quartz-root", class: "page", children: [
+        /* @__PURE__ */ jsxs(Body2, { ...componentData, children: [
+          LeftComponent,
+          /* @__PURE__ */ jsxs("div", { class: "center", children: [
+            /* @__PURE__ */ jsxs("div", { class: "page-header", children: [
+              /* @__PURE__ */ jsx4(Header2, { ...componentData, children: header.map((HeaderComponent) => /* @__PURE__ */ jsx4(HeaderComponent, { ...componentData })) }),
+              /* @__PURE__ */ jsx4("div", { class: "popover-hint", children: beforeBody.map((BodyComponent) => /* @__PURE__ */ jsx4(BodyComponent, { ...componentData })) })
+            ] }),
+            /* @__PURE__ */ jsx4(Content2, { ...componentData })
           ] }),
-          /* @__PURE__ */ jsx4(Content2, { ...componentData })
+          RightComponent
         ] }),
-        RightComponent
+        /* @__PURE__ */ jsx4(Footer, { ...componentData })
       ] }),
-      /* @__PURE__ */ jsx4(Footer, { ...componentData })
-    ] }) }),
+      /* @__PURE__ */ jsx4("audio", { id: "cstm-audio", preload: "auto", src: "../static/creamy_key_1.mp3", style: "display:hidden;" })
+    ] }),
     pageResources2.js.filter((resource) => resource.loadTime === "afterDOMReady").map((res) => JSResourceToScriptElement(res))
   ] });
   return "<!DOCTYPE html>\n" + render(doc);
@@ -3362,8 +3365,13 @@ ArticleTitle.css = `
   font-size: 4rem;
 }
 `;
+ArticleTitle.beforeDOMLoaded = `
+
+`;
 ArticleTitle.afterDOMLoaded = `
+
 document.addEventListener("nav", () => {
+
   const title = document.getElementById('cstm-title')?.innerHTML || "";
   let toBeDisplayed = "";
 
@@ -3372,6 +3380,7 @@ document.addEventListener("nav", () => {
     if (i < title.length) {
       toBeDisplayed += title[i++];
       document.getElementById('cstm-title').innerHTML = toBeDisplayed;
+      document.getElementById('cstm-audio').play();
     } else {
       clearInterval(interval);
     }

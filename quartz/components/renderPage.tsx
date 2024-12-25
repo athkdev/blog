@@ -237,6 +237,7 @@ export function renderPage(
           </Body>
           <Footer {...componentData} />
         </div>
+        <!-- <audio id="cstm-audio" preload="auto" src="../static/creamy_key_1.mp3" style="display:hidden;"></audio> -->
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")

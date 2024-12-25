@@ -18,8 +18,14 @@ ArticleTitle.css = `
 }
 `
 
+ArticleTitle.beforeDOMLoaded = `
+
+`;
+
 ArticleTitle.afterDOMLoaded = `
+
 document.addEventListener("nav", () => {
+
   const title = document.getElementById('cstm-title')?.innerHTML || "";
   let toBeDisplayed = "";
 
@@ -28,6 +34,7 @@ document.addEventListener("nav", () => {
     if (i < title.length) {
       toBeDisplayed += title[i++];
       document.getElementById('cstm-title').innerHTML = toBeDisplayed;
+      // document.getElementById('cstm-audio').play();
     } else {
       clearInterval(interval);
     }
