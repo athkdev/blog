@@ -4,7 +4,9 @@ tags:
     - medium
 ---
 
-I also post leetcode explainations and my thought processes here - **[[leetcode resources/]]**
+I post problem solving and my thought processes here - **[[leetcode resources/]]**
+
+Read more about my projects here - **[athk's projects](https://athk.dev)**
 
 I write about programming, tech and general stuff that I learn about and want to tell someone
 
