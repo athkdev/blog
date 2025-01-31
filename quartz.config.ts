@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       typography: {
         header: "Geist",
         body: "Geist",
-        code: "Geist Mono",
+        code: "Inconsolata",
       },
       colors: {
         lightMode: {
