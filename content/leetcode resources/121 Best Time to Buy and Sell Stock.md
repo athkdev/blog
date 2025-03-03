@@ -1,10 +1,8 @@
 ---
 title: 121 Best Time to Buy and Sell Stock
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We iterate over the array and then keep updating a maximum profit variable. This variable helps us to carry whatever the maximum profit is at every point. Because every index `i` in the array `prices` is a day, one can’t go back in time to sell stocks. This simplifies the problem, we only care what the next best day to sell stocks is, and for that, we maximize our profits. We also keep in track the current `lowest` (this is when we buy) and the `maxProfit` (this is when we sell)
 
@@ -18,7 +16,7 @@ def maxProfit(self, prices: List[int]) -> int:
     minBuy = 10**5
     profit = -10**5
 
-    for p in prices:        
+    for p in prices:
         '''
         instead of keeping track of buy and sell
 
@@ -30,21 +28,17 @@ def maxProfit(self, prices: List[int]) -> int:
         '''
         minBuy = min(p, minBuy)
         profit = max(profit, p - minBuy)
-    
+
     return max(profit, 0)
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array once.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructure.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

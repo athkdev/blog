@@ -1,9 +1,8 @@
 ---
 title: 1967 Number of Strings That Appear as Substrings i
 tags:
-    - medium
+  - medium
 ---
-
 
 # 1967. Number of Strings That Appear as Substrings in Word
 
@@ -20,7 +19,7 @@ class Solution:
 
         for w in patterns:
             if w in word: ret += 1
-        
+
         return ret
 
 ```
@@ -28,14 +27,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N^2)$ where N = length of list p. 
-    
+  The runtime complexity here is $O(N^2)$ where N = length of list p.
 - Memory
-    
-    The memory usage is `O(N)` since we use a `ret` string.
-    
+  The memory usage is `O(N)` since we use a `ret` string.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,9 +1,8 @@
 ---
 title: 2958 Length of Longest Subarray With at Most K Fre
 tags:
-    - medium
+  - medium
 ---
-
 
 # 2958. Length of Longest Subarray With at Most K Frequency
 
@@ -32,23 +31,19 @@ class Solution:
                         left += 1
             else:
                 freq[n] = 1
-            
+
             res = max(right - left + 1, res)
-        
+
         return res
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime here is $O(N)$ since we are visiting each element once.
-    
+  The runtime here is $O(N)$ since we are visiting each element once.
 - Memory
-    
-    We use a frequency table so the memory order is $O(N)$
-    
+  We use a frequency table so the memory order is $O(N)$
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

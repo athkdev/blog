@@ -11,6 +11,7 @@ No, you can't solve it using a sliding window. I mean you can, but you would req
 The problem is asking us if every portion of the input string `s` could be divided in such a way that every substring is found in the dictionary.
 
 Logically speaking,
+
 ```python
 
 S = "abcdef"
@@ -26,18 +27,16 @@ if P1 in wordDict and P2 in wordDict and P3 in wordDict:
 ```
 
 ## Intuition
+
 So, since now we know it's a decision tree problem where the results of the entire string contributes to the final answer, we are sure to use DFS with memo or dynamic programming.
 
-
 > Generally speaking tabular DP produces little code, although some may argue it's more abstracted and difficult to get around at first.
-
 
 Whenever working with DP ensure that you are first defining the `state` and `transition equation`.
 
 > `state` = `dp[i]` = Is the substring `s[0:i+1]` a valid substring? Meaning, is `s[0:i+1]` itself in the dictionary **OR** could it be broken down into smaller substrings **WHICH** are found in the dictionary?
 
-> `transition` = To determine the value of `dp[i]`, we check if `s[i - len(w)]` was successfully segmented **OR** `s[i - len(w) + 1: i] == w`. 
-
+> `transition` = To determine the value of `dp[i]`, we check if `s[i - len(w)]` was successfully segmented **OR** `s[i - len(w) + 1: i] == w`.
 
 # Code
 
@@ -75,4 +74,4 @@ def wordBreak(self, s: str, wordDict: List[str]) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

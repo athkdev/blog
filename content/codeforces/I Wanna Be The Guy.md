@@ -11,8 +11,6 @@ Pretty straightforward, we maintain a set of all the current levels and deduct t
 
 A good application here would be set arithmetic too.
 
-
-
 # Code
 
 ### Python3
@@ -64,4 +62,4 @@ else:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

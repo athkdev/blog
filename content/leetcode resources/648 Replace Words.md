@@ -4,8 +4,6 @@ tags:
   - medium
 ---
 
-
-
 # Code:
 
 ### Python3
@@ -27,17 +25,17 @@ class TrieNode:
     def __init__(self):
         self.children = collections.defaultdict(TrieNode)
         self.isWord = False
-        
+
 class Trie:
     def __init__(self):
         self.root = TrieNode()
-    
+
     def insert(self, word):
         node = self.root
         for w in word:
             node = node.children[w]
         node.isWord = True
-    
+
     def search(self, word):
         node = self.root
         osf = ''
@@ -61,4 +59,4 @@ class Trie:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

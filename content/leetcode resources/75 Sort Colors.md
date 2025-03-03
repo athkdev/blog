@@ -6,14 +6,12 @@ tags:
   - dutch national flag
 ---
 
-
 This problem is the famous reiteration of the `Dutch National Flag problem` put forth by renouned computer scientist Edsger Dijkstra (yes the one with the shortest path finding algorith).
 
 The algorithm, generally speaking, is not used for all purpose sorting such as quicksort or mergesort (because we need to know the low value and high value beforehand). Rather, it's an algorithm to separate low outliers, and high outliers in a dataset.
 So, it sorts all low values to the left, all high values to the right, and all other value that are neither low nor high are placed somewhere in the middle.
 
 For a thorough understanding of the DNF algorith, please refer to [[/notes/Dutch National Flag algorithm]]
-
 
 # Code:
 
@@ -32,7 +30,7 @@ def sortColors(self, nums: List[int]) -> None:
 
     while mid <= high:
         if nums[mid] == 0:  # low or red
-            nums[mid], nums[low] = nums[low], nums[mid]   # swap mid with low 
+            nums[mid], nums[low] = nums[low], nums[mid]   # swap mid with low
             mid += 1
             low += 1
 
@@ -58,4 +56,4 @@ def sortColors(self, nums: List[int]) -> None:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

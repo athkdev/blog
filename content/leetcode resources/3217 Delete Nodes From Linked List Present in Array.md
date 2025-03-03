@@ -10,9 +10,7 @@ tags:
 
 The problem is very similar to removing a node from the linked list. But instead of one nodes, now there are multiple nodes that need deletion.
 
-
 So we convert the `nums` array into a set for constant time look-up. While iterating over the list if we come across any node that is present in this set, we set `next` property of that node's parent (previous node) to `next.next`. This means we skip the node in the middle (to be deleted) and straight jump to the next node.
-
 
 This is fundamental to how deletions in linked lists work.
 
@@ -22,7 +20,7 @@ This is fundamental to how deletions in linked lists work.
 
 ```python
 def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
-    
+
     if not head: return None
 
     nums = set(nums)
@@ -36,7 +34,7 @@ def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[Li
             head.next = head.next.next   # delete node at head - skip node
         else:
             head = head.next    # if current node is not in nums, iterate normally - no skipping
-    
+
     return result.next.next if result.next.val in nums else result.next
 ```
 
@@ -52,4 +50,4 @@ def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[Li
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

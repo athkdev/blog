@@ -1,10 +1,8 @@
 ---
 title: 235 Lowest Common Ancestor of a Binary Search Tree
 tags:
-    - medium
+  - medium
 ---
-
-
 
 So, the lowest common ancestor for any two nodes (`p` and `q`) in a BST is termed as the minimum value node that contains both `p` and `q` in their sub trees. The lowest common ancestor for any node is itself or some previous node.
 
@@ -31,14 +29,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` .
-    
+  The runtime complexity here is `O(N)` .
 - Memory
-    
-    The memory usage is `O(N)` since we would use the implicit call stack.
-    
+  The memory usage is `O(N)` since we would use the implicit call stack.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

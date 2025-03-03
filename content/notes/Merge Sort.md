@@ -5,18 +5,16 @@ tags:
   - leetcode 912
 ---
 
-
 Leetcode 912 uses this algorithm and shows a practical implementation, check that out too - [[/leetcode resources/912 Sort An Array]]
 
 The merge sort algorithm is one of the most important algorithms to study in terms of understanding "programming". It's important as in, the concepts `(recursion, divide and conquer, sorting)` that one learns while implementing this algorithm is widely used in current programming scenarios - even LeetCode.
-
 
 ## Basic idea
 
 Let's go from the basics, so Merge Sort is a [[/notes/Divide and Conquer]] algorithm. That means, we divide the algorithm into smaller subproblems - then gather the results of these subproblems to generate our final result. Don't get confused with Dynamic Programming. Remember, DP involves breaking down input in to smaller `overlapping` subproblems when Divide and Conquer is breaking down input into smaller `non-overlapping` subproblems. Also, DP is an optimization technique, divide and conquer not so much.
 
-
 ##### Algorithm:
+
 > (1) Break down the input array into two smaller subarrays, and then break them down into two even smaller subarrays, and then break down into two even smaller subarrays, and then break down into even smaller subarrays, and then break... hahaha you get it. Ik, it gives recursion.
 
 > (2) Once every smaller subarray has a single element, merge these 'single' elements into one large array by checking which comparing two elements at a time.
@@ -35,7 +33,6 @@ divide(array)   # recursively break down a array into two arrays split from the 
 merge(A, B)     # recursively merge two subarrays A and B, and return a larger array R
 ```
 
-
 ## Pseudocode
 
 ```python
@@ -43,9 +40,9 @@ merge(A, B)     # recursively merge two subarrays A and B, and return a larger a
 A = [1, 2, 6, 3, 4, 9, 7]
 
 
-def mergeSort(ar: List[int]) -> List[int]: 
+def mergeSort(ar: List[int]) -> List[int]:
     '''
-    driver function 
+    driver function
     '''
     return divide(ar)
 
@@ -103,8 +100,6 @@ def merge(A: List[int], B: List[int]) -> List[int]:
 
 ```
 
-
-
 ## Runtime and memory analysis
 
 We are breaking down input by half at every step (log N), but this happens for N times in an array with N elements. So the runtime becomes $O (N * logN)$.
@@ -116,8 +111,6 @@ The memory usage is $O(N)$, because remember that in the merge function, we gene
 I highly recommend reading [Zhijun Liao's](https://leetcode.com/u/zhijun_liao/) [post](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/solutions/769703/python-clear-explanation-powerful-ultimate-binary-search-template-solved-many-problems/) on LeetCode.
 He explains a series of problems on LeetCode that could be solved by understanding how and when to apply Binary Search. He also shows a wonderful template that I highly recommend following.
 
-
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
-
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

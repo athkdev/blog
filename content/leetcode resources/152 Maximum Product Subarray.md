@@ -1,10 +1,8 @@
 ---
 title: 152 Maximum Product Subarray
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We need to find the maximum product subarray present in a given input array. This has a very sweet linear solution which is fundamental to a lot of problems on leetcode.
 
@@ -16,7 +14,7 @@ For this, we use the common prefix and suffix sum technique where we calculate t
 
 It will preserve the positive/negative state of each product at every step. We don’t have to keep track of whether there are odd or even negative elements present.
 
-There’s one issue in this approach though, that is when we encounter a zero. A zero turns the subarray sum to zero. To counter this we just add reset to a new subarray from the $zero^{th}$ element index. We do this by setting $prefix[z] = suffix[z] = 0$ where $z = index\; of\; zero^{th} \;element$. 
+There’s one issue in this approach though, that is when we encounter a zero. A zero turns the subarray sum to zero. To counter this we just add reset to a new subarray from the $zero^{th}$ element index. We do this by setting $prefix[z] = suffix[z] = 0$ where $z = index\; of\; zero^{th} \;element$.
 
 # Code
 
@@ -32,7 +30,7 @@ class Solution:
         for i in range(1, N):
             prefix[i] *= prefix[i-1] or 1
             suffix[i] *= suffix[i-1] or 1
-        
+
 
         return max(suffix + prefix)
 ```
@@ -40,14 +38,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O( N)$ . There’s just one for loop that calculates the prefix and suffix values.
-    
+  The runtime complexity here is $O( N)$ . There’s just one for loop that calculates the prefix and suffix values.
 - Memory
-    
-    The memory usage is $O(N)$ since we use the prefix and suffix arrays of size $N = nums.length$.
-    
+  The memory usage is $O(N)$ since we use the prefix and suffix arrays of size $N = nums.length$.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

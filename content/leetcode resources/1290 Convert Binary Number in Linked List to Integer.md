@@ -9,9 +9,7 @@ tags:
 
 The process of converting a binary string/number to an integer with base 10 is a recursive sub-process and so in a linked list.
 
-
 So we aim at designing a recursive function that adds up to a integer by raising 2 to the current list node value if it's 1 else 0.
-
 
 We also have a `size` function that gives us the total size of the linked list.
 
@@ -23,7 +21,7 @@ We also have a `size` function that gives us the total size of the linked list.
 class Solution:
     def getDecimalValue(self, head: ListNode, length = 0) -> int:
         n = self.size(head)
-        
+
         def count(node, length=0):
             if not node:
                 return 0
@@ -31,7 +29,7 @@ class Solution:
             return count(node.next, length + 1) + (pow(2, n - length - 1) if node.val == 1 else 0)
 
         return count(head)
-    
+
     def size(self, head):
         if not head: return 0
 
@@ -50,4 +48,4 @@ class Solution:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

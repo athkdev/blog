@@ -1,10 +1,8 @@
 ---
 title: 102 Binary Tree Level Order Traversal
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Very straightforward, a level order traversal is the same thing as BFS. You arrive at a node, put it’s neighbours in a queue to be visited later. Make sure to also maintain a another loop inside your main BFS loop so that you keep track of “levels”.
 
@@ -51,14 +49,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructure.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

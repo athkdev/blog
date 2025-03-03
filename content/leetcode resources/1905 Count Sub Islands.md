@@ -49,4 +49,4 @@ def minEatingSpeed(self, piles: List[int], h: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

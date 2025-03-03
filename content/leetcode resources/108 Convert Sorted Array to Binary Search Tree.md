@@ -11,7 +11,6 @@ It's crucial that while offloading nodes to the list, we do an `inorder()` trave
 
 [[/leetcode resources/1382 Balance a Binary Search Tree]] uses the fundamental knowledge that you build in this problem. I recommend solving that too while you are on this one.
 
-
 # Code
 
 ### Python3
@@ -30,11 +29,12 @@ def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         cur_root.right = construct_tree(mid + 1, end)
 
         return cur_root
-    
+
     return construct_tree(0, len(nums)-1)
 ```
 
 ### Go
+
 ```go
 /**
  * Definition for a binary tree node.
@@ -75,4 +75,4 @@ func constructBST(left, right int, arr []int) *TreeNode {
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

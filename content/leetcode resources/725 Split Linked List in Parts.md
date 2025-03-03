@@ -6,10 +6,10 @@ tags:
   - linked list
 ---
 
-Here, we need to return a list with smaller linked lists divided equally. Note, we do not need to return a list with lists containing the list nodes. We only need to return a list with `head` nodes of the partitioned smaller lists. 
-
+Here, we need to return a list with smaller linked lists divided equally. Note, we do not need to return a list with lists containing the list nodes. We only need to return a list with `head` nodes of the partitioned smaller lists.
 
 Few things off my mind:
+
 1. Since we need to have smaller linked lists, we need to iterate the larger list, iterate over required number of nodes, and mark the last node of this "partition" to `node.next = None`. This is what breaks the links between partition lists.
 
 2. We can calculate the window size required, so we know when to break a partition. Also important, that they have mentioned that the paritions' size can only differ by one and the larger lists must be at the beginning of the result list.
@@ -20,7 +20,7 @@ Few things off my mind:
 
 ```python
 def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
-    
+
     cur, list_size = head, 0
     while cur:
         list_size += 1
@@ -40,7 +40,7 @@ def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[Li
             for _ in range(window_size - 1 + (1 if i < extra else 0)):
                 if node:
                     node = node.next
-            
+
             if node:
                 node.next, node = None, node.next   # both are assigned at the same time
 
@@ -59,4 +59,4 @@ def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[Li
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

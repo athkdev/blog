@@ -1,10 +1,8 @@
 ---
 title: 49 Group Anagrams
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Word A is an anagram of word B, if there exists a one-to-one relation for each character between the two words. In simple words, the bag of letters in word A must be identical to bag of letters in word B.
 
@@ -29,14 +27,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N * M * log (M))$ since we sort for every iteration: where $N = len(strs)$ and $M = len(strs[i])$
-    
+  The runtime complexity here is $O(N * M * log (M))$ since we sort for every iteration: where $N = len(strs)$ and $M = len(strs[i])$
 - Memory
-    
-    The memory usage is `O(N)`  where $M = len(strs)$
-    
+  The memory usage is `O(N)` where $M = len(strs)$
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

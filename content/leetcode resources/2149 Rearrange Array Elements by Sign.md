@@ -1,10 +1,8 @@
 ---
 title: 2149 Rearrange Array Elements by Sign
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We just brute force our way into the matrix, do bound checks for our values and just calculate the required hour glass sum, and finally update our max sum with every iteration.
 
@@ -26,21 +24,17 @@ class Solution:
             if n < 0:
                 res[neg] = n
                 neg += 2
-        
+
         return res
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$  since we visit all elements atleast once.
-    
+  The runtime complexity here is $O(N)$ since we visit all elements atleast once.
 - Memory
-    
-    The memory usage is $O (N)$ since we are creating a new result array.
-    
+  The memory usage is $O (N)$ since we are creating a new result array.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

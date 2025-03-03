@@ -1,10 +1,8 @@
 ---
 title: 153 Find Minimum in Rotated Sorted Array
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This problem is similar to [leetcode 33](33%20Search%20in%20Rotated%20Sorted%20Array%201aebacf96c0d47639c3098c375fc83b1.md). We want the minimum element in a rotated sorted array, this rotation could have happened n times. Basically, we want to find the pivot or rotation point.
 
@@ -20,7 +18,7 @@ It’s important to understand that $A[mid] > A[right]$ implies that the pivot e
 class Solution {
     public int findMin(int[] nums) {
         int left = 0, right = nums.length - 1;
-        
+
         while (left < right) {
             int mid = (right-left) /2 + left;
 
@@ -39,14 +37,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(log N)$ since we reduce the search sample space by half at each point so it’s exponentially faster at every step.
-    
+  The runtime complexity here is $O(log N)$ since we reduce the search sample space by half at each point so it’s exponentially faster at every step.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructures.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructures.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

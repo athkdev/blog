@@ -1,10 +1,8 @@
 ---
 title: 2315 Count Asterisks
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We are required to count the number of asterisks between two pairs of `|`. Think of a pair of `|` as a wall within which you cannot see anything, and you can see everything between two such walls.
 
@@ -17,30 +15,26 @@ Well, we are just applying the same logic. We have a boolean flag variable that 
 ```python
 class Solution:
     def countAsterisks(self, s: str) -> int:
-        flag = True 
+        flag = True
 
         res = 0
         for c in s:
             if c == '|':
                 flag = not flag
-            
+
             if flag and c == '*':
                 res += 1
-        
+
         return res
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
 - Memory
-    
-    The memory usage is `O(N)` since we use a stack to keep track of characters.
-    
+  The memory usage is `O(N)` since we use a stack to keep track of characters.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

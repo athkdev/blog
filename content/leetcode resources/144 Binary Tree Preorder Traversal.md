@@ -1,10 +1,8 @@
 ---
 title: 144 Binary Tree Preorder Traversal
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This is a fundamental tree problem that requires us to collect the preorder traversal of a tree in a list and return it. A preorder traversal is a tree/graph traversal where you visit the first node (root in a case of a tree), and then it’s children.
 
@@ -31,7 +29,7 @@ class Solution:
             dfs(root.right)
 
             return None
-        
+
         dfs(root)
 
         return res
@@ -40,14 +38,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be visiting all the nodes in the tree.
-    
+  The runtime complexity here is `O(N)` as since we would be visiting all the nodes in the tree.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructure (usually the returning result array does not count, if it counts, then it’s `O(N)`).
-    
+  The memory usage is `O(1)` since we are not using any extra datastructure (usually the returning result array does not count, if it counts, then it’s `O(N)`).
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

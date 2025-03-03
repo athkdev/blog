@@ -1,17 +1,14 @@
 ---
 title: 1221 Split a String in Balanced Strings
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We need to come up with the maximum number of substrings with an equal number of ‘L’ and ‘R’ characters. There would be multiple answers but since they have mentioned **maximum** we need to find the smallest substrings with equal number of ‘L’s and ‘R’s.
 
 We increment an L counter and an R counter whenever we encounter a corresponding character. We reset them once $L == R$, as per required.
 
 > Note: having a left pointer as in the code below is not mandatory for the problem, it’s only crucial if one needs to maintain all the substrings. For eg. return all balanced substrings
-> 
 
 # Code:
 
@@ -44,14 +41,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string atleast once.
-    
+  The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string atleast once.
 - Memory
-    
-    The memory usage is $O(1)$ since we are not using any extra datastructure.
-    
+  The memory usage is $O(1)$ since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

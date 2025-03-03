@@ -28,7 +28,7 @@ Similarly, if we are unable to build the bouquets that means we are underplaying
 
 ```python
 def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
-    
+
     '''
     search space = minimum number of days to build m bouquets
 
@@ -45,9 +45,9 @@ def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
             else:
                 bouquets += (flowers + 1) // k   # simulate building bouquets
                 flowers = (flowers + 1) % k   # once a bouqet is made, update flowers to remaining flowers since flowers cannot be reused
-            
+
         return bouquets >= m
-    
+
     left, right = 1, max(bloomDay)
 
     if len(bloomDay) < m * k:
@@ -60,7 +60,7 @@ def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
             right = mid
         else:
             left = mid + 1
-    
+
     return left
 ```
 
@@ -76,4 +76,4 @@ def minDays(self, bloomDay: List[int], m: int, k: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

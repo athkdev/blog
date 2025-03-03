@@ -43,13 +43,13 @@ def reverseOddLevels(self, root: Optional[TreeNode], h: int = 0) -> Optional[Tre
                 queue.appendleft(node.left)
             if node.right:
                 queue.appendleft(node.right )
-        
+
         depth += 1
 
         if depth % 2 != 0:   # if level height is odd
             for i in range(len(queue)//2):
                 queue[i].val, queue[~i].val = queue[~i].val, queue[i].val
-    
+
 
     return root
 ```
@@ -66,4 +66,4 @@ def reverseOddLevels(self, root: Optional[TreeNode], h: int = 0) -> Optional[Tre
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,10 +1,8 @@
 ---
 title: 2710 Remove Trailing Zeros From a String
 tags:
-    - medium
+  - medium
 ---
-
-
 
 lol
 
@@ -21,14 +19,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` where N = length of list `nums`. 
-    
+  The runtime complexity here is `O(N)` where N = length of list `nums`.
 - Memory
-    
-    constant space!
-    
+  constant space!
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

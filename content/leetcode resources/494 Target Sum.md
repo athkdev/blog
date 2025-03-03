@@ -10,12 +10,9 @@ tags:
 
 One can see that this problem is of the type "include - exclude" OR "knapsack" dynamic programming. The "include - exclude" OR "knapsack" are problems where we need to enumerate all possible possibilities by choosing some elements or not.
 
-
-So, this boils the problem down to a decision tree. If you think about it, to get to our result i.e. the number of different subsequences can be made from our array whose sum is equal to `target` - we must check all possible subsequences. Well, this is called a decision tree. 
-
+So, this boils the problem down to a decision tree. If you think about it, to get to our result i.e. the number of different subsequences can be made from our array whose sum is equal to `target` - we must check all possible subsequences. Well, this is called a decision tree.
 
 A decision tree, the program execution has an option to do two things for each recursive call - either `include` the current element and see if it generates the correct output OR `exclude` the current element and check the same.
-
 
 For each recursive, if we have two choices - meaning the program will grow the decision tree with two children at a time. This is a runtime of $O(2^N)$. There are indeed a lot of repeated calculations done, so we can memoise them to bring down the complexity so that each subsequence is atmost calculated once (or constant time looked up multiple times).
 
@@ -25,7 +22,7 @@ For each recursive, if we have two choices - meaning the program will grow the d
 
 ```python
 def findTargetSumWays(self, nums: List[int], target: int) -> int:
-    
+
     @functools.cache
     def dfs(i, cur_sum):
         if i == len(nums):
@@ -55,4 +52,4 @@ def findTargetSumWays(self, nums: List[int], target: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

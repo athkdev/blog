@@ -5,19 +5,18 @@ tags:
   - leetcode 75
 ---
 
-
 Leetcode 75 uses this algorithm and shows a practical implementation, check that out too - [[/leetcode resources/75 Sort Colors]]
 
 The idea of this algorithm is to sort all low outliers and high outliers to either sides. Hence this is not a regular sorting algorithm, just a special case one since we are required to know the `low` and `high` beforehand.
 
 ## Basic idea
-So we maintain three pointers - `low`, `mid` and `high`. 
+
+So we maintain three pointers - `low`, `mid` and `high`.
 
 - Everything left of `low` (inclusive) are supposed to be the low values
 - Everything right of `high` (inclusive) are supposed to be the high values
 - Everything between `low` and `mid` (mid inclusive) are supposed to be the mid values (this means values that we have seen and are neither low nor high)
 - Everything between `mid` and `high` (mid exclusive) are supposed to be the unknown values (yet to be classified)
-
 
 This means that `mid` always points to the first element of the unknown subset i.e. between `mid` to `high`.
 
@@ -57,8 +56,6 @@ The memory usage is $O(1)$ since we don't use any extra datastructure and change
 
 I highly recommend watching [CodeSmart's](https://www.youtube.com/@codesmart760) youtube [video](https://www.youtube.com/watch?v=9pdkbqGwUhs) where they explain the above algorithm with playing cards - it's so effective.
 
-
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
-
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

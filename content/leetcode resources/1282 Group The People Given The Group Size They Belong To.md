@@ -15,7 +15,6 @@ for i in range(len(arr) // groupSize):
 
 ```
 
-
 # Code:
 
 ### Python3
@@ -29,7 +28,7 @@ def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
             freq[groupSizes[i]].append(i)
         else:
             freq[groupSizes[i]] = [i]
-    
+
     ret = []
 
     for k, v in freq.items():
@@ -51,4 +50,4 @@ def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

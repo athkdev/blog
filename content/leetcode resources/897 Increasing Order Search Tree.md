@@ -10,12 +10,9 @@ tags:
 
 We need to the structure of the given binary tree such that all of it's nodes have no left property, and the tree is built only on right nodes.
 
-
 Here's how I thought about it: a tree with only right nodes is a linked list. Think of `node.right` of a tree as the same as `node.next` of a linked list.
 
-
 So we extract the nodes from the tree using `in-order traversal` and store them in a list.
-
 
 Then we build a linked list recursively treating the `node.right` pointer as a `node.next`.
 
@@ -31,7 +28,7 @@ def increasingBST(self, root: TreeNode) -> TreeNode:
     def extract_elements(node: TreeNode, li: List[TreeNode]):
         if not node:
             return None
-        
+
         extract_elements(node.left, li)
         li.append(node)   # in-order
         extract_elements(node.right, li)
@@ -66,4 +63,4 @@ def increasingBST(self, root: TreeNode) -> TreeNode:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

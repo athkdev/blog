@@ -1,10 +1,8 @@
 ---
 title: 213 House Robber II
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The constraint that they have inserted into this one just requires us to tweak the input arrays. We can just use the solution from House Robber, just change its inputs cleverly.
 
@@ -29,7 +27,7 @@ class Solution:
             memo[i] = max(include, exclude)
 
             return memo[i]
-        
+
         ret1 = dfs(0, dict(), nums[:-1])
         ret2 = dfs(0, dict(), nums[1:])
         return max(ret1, ret2, nums[0])
@@ -38,14 +36,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$. This is an example of a linear 1-dimensional DP, where we only iterate the input once. Had it been a nested iteration it could have been $O(N^2)$.
-    
+  The runtime complexity here is $O(N)$. This is an example of a linear 1-dimensional DP, where we only iterate the input once. Had it been a nested iteration it could have been $O(N^2)$.
 - Memory
-    
-    The memory usage is $O(N)$, since we require a dictionary to store previously calculated results.
-    
+  The memory usage is $O(N)$, since we require a dictionary to store previously calculated results.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

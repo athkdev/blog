@@ -1,14 +1,12 @@
 ---
 title: 1544 Make The String Great
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This is an easy question and a pretty straightforward one at that. So you want to remove all instances of string sequences that are in the format `‘lower, upper’` OR `‘upper, lower’` adjacent to each other.
 
-There are multiple ways to do it, but a very intuitive one is to use a stack. Start putting all elements in the stack one by one. 
+There are multiple ways to do it, but a very intuitive one is to use a stack. Start putting all elements in the stack one by one.
 
 Before each insertion, check if the current element in the `for` loop is an upper/lower complementary character of the `S[-1]` or `S.peek()` character. This is checked by XOR-ing both characters. `ord(S[-1]) ^ ord(c)`.
 
@@ -33,21 +31,17 @@ class Solution:
                 S.pop()
             else: S.append(c)
 
-        
+
         return ''.join(S)
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the string once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the string once.
 - Memory
-    
-    The memory usage is `O(N)`  since we use a stack.
-    
+  The memory usage is `O(N)` since we use a stack.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -11,13 +11,9 @@ tags:
 
 We are required to extract all elements in two binary search trees and return them in a sorted list. Now one of the approaches is to get elements from both trees in a list, sort it and return. But here the bottleneck is the sort - which makes the solution `O(N*logN)`.
 
-
 We can optimize that - since we are given BSTs, doing an in-order traversal on them would result in us extracting the values from each trees in a sorted manner. That's what a BST is known for. So we extract both elements from both trees in separate lists and then merge them manually taking advantage of the fact that they are both sorted too.
 
-
 Remember just extending one list to another and sorting is again `N * logN`. Instead we merge them by having a pointer for each list, compare values at `list1[p1]` and `list2[p2]` and finally move pointers accordingly. This is linear time.
-
-
 
 # Code
 
@@ -35,7 +31,7 @@ def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
         dfs(node.left, l)
         l.append(node.val)
         dfs(node.right, l)
-    
+
     dfs(root1,tree1)
     dfs(root2,tree2)
 
@@ -50,7 +46,7 @@ def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
         else:
             result.append(tree2[p2])
             p2 += 1
-        
+
     result.extend(tree1[p1:])
     result.extend(tree2[p2:])
 
@@ -69,4 +65,4 @@ def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

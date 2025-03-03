@@ -7,6 +7,7 @@ tags:
 ---
 
 # Intuition
+
 We pre-compute all column values and store it in a set for near constant time lookup. Then calculate the minimum element in every row and check if it's in the column set.
 
 This code works only on the assumption that there could not exist more than 1 lucky number in the matrix. [See proof here](https://leetcode.com/problems/lucky-numbers-in-a-matrix/description/comments/2525061).
@@ -19,7 +20,7 @@ Had there been a case of having multiple lucky numbers, we would have needed a h
 
 ```python
 def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
-    
+
     colMax = set(map(max, zip(*matrix)))
     '''
     calculate the maximum in each column
@@ -34,7 +35,7 @@ def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
     for row in matrix:
         rowMin = min(row)
         if rowMin in colMax: [rowMin]
-    
+
     return []
 ```
 
@@ -50,4 +51,4 @@ def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

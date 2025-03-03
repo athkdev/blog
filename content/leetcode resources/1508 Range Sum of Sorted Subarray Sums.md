@@ -10,6 +10,7 @@ tags:
 We need all possible subarrays of this array, add them all to a list, then extract elements on the basis of a range from this list, add them up and return - pretty straightforward.
 
 This code generates all possible subarrays in an array of length n. Remember, subarrays are different from subsets which are different from subsequences.
+
 ```python
 for i in range(n):
     for j in range(i, n):
@@ -21,6 +22,7 @@ In the below code we are computing the running sum in the range `left..right` - 
 Well because since the answers could be very huge, the question author asked us to do this.
 
 Here's how it works:
+
 ```python
 N mod X = [(A mod X) + (B mod X) + (C mod X)] mod X
 
@@ -40,7 +42,7 @@ class Solution:
     def rangeSum(self, A: List[int], n: int, left: int, right: int) -> int:
 
         sums = []
-        
+
         for i in range(n):
             for j in range(i, n):
                 '''
@@ -69,4 +71,4 @@ class Solution:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

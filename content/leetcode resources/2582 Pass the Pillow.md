@@ -27,7 +27,7 @@ def passThePillow(self, n: int, time: int) -> int:
             direction = False
         if direction: nn += 1
         else:         nn -= 1
-    
+
     return nn
 ```
 
@@ -43,4 +43,4 @@ def passThePillow(self, n: int, time: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

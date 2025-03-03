@@ -2,10 +2,11 @@
 title: 1598 Crawler Log Folder
 date: 2024-07-10
 tags:
-  - easy 
+  - easy
 ---
 
 # Intuition
+
 In a way, we are just required to keep the track the maximum depth of the file structure.
 
 Minimum number of operations to go back after folder changes = Maximum depth of file tree
@@ -26,7 +27,7 @@ def minOperations(self, logs: List[str]) -> int:
             pass
         else:
             depth += 1
-    
+
     return depth
 ```
 
@@ -42,4 +43,4 @@ def minOperations(self, logs: List[str]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

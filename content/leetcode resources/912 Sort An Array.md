@@ -14,14 +14,13 @@ So let's implement a Merge Sort - since it fits the description of a `n * log (n
 
 Please refer my breaking down and analysis of how [[/notes/Merge Sort]] works.
 
-
 # Code
 
 ### Python3
 
 ```python
 def sortArray(self, nums: List[int]) -> List[int]:
-    
+
     def merge(A, B):
         R = [0 for _ in range(len(A) + len(B))]
 
@@ -35,18 +34,18 @@ def sortArray(self, nums: List[int]) -> List[int]:
                 R[z] = B[y]
                 y += 1
             z += 1
-        
+
         while x < len(A):
             R[z] = A[x]
             x += 1; z += 1
-         
+
         while y < len(B):
             R[z] = B[y]
             y += 1; z += 1
-        
+
 
         return R[:]
-        
+
 
     def mergeSort(ar):
         if len(ar) <= 1: return ar
@@ -73,4 +72,4 @@ def sortArray(self, nums: List[int]) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

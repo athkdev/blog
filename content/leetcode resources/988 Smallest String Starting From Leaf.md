@@ -1,10 +1,8 @@
 ---
 title: 988 Smallest String Starting From Leaf
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Carry out usual `DFS` and keep track of current string that is getting created. Once you reach `leaves`, update the `smallest` current string. We are using an external variable for this which is why we have to use the `nonlocal` variable.
 
@@ -25,14 +23,14 @@ class Solution:
             if node == None: return
 
             curStr += chr(ord('a') + node.val)
-            
+
             dfs(node.left, curStr)
             dfs(node.right, curStr)
 
             if not node.left and not node.right:
                 nonlocal smallest
                 smallest = min(curStr[::-1], smallest)
-        
+
         smallest = '~'
         dfs(root, '')
         return smallest
@@ -41,14 +39,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$  since we would visit all nodes.
-    
+  The runtime complexity here is $O(N)$ since we would visit all nodes.
 - Memory
-    
-    The memory usage is $O(N)$ since we use the implicit call stack for recursion.
-    
+  The memory usage is $O(N)$ since we use the implicit call stack for recursion.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

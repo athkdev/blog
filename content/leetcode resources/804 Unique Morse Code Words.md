@@ -13,7 +13,6 @@ In a real setting, due to some delimiter (most probably space) - two distinct wo
 
 Use a set to store computed codes, and return the number of distinct codes.
 
-
 # Code
 
 ### Python3
@@ -31,10 +30,10 @@ def uniqueMorseRepresentations(self, words: List[str]) -> int:
 
         for c in w:
             code += cipher[ord(c) - ord('a')]
-        
+
         if code not in computed:
             computed.add(code)
-            
+
     return len(computed)
 ```
 
@@ -50,4 +49,4 @@ def uniqueMorseRepresentations(self, words: List[str]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

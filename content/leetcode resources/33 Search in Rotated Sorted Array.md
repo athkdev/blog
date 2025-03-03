@@ -1,10 +1,8 @@
 ---
 title: 33 Search in Rotated Sorted Array
 tags:
-    - medium
+  - medium
 ---
-
-
 
 In the problem, we are given a sorted array. But this array is rotated at some point. Rotating an array implies that at a random point, the array was broken off into two subarrays and their positions were exchanged while rejoining the subarrays.
 
@@ -49,14 +47,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(log N)$ since we reduce the search sample space by half at each point so it’s exponentially faster at every step.
-    
+  The runtime complexity here is $O(log N)$ since we reduce the search sample space by half at each point so it’s exponentially faster at every step.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructures.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructures.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

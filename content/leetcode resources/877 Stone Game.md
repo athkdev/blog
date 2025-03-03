@@ -10,8 +10,6 @@ tags:
 
 So we have to maximize Alice's moves and minimize Bob's moves. But a greedy approach won't fully suffice, simply because in a move taking the largest element between `arr[0]` AND `arr[-1]` won't guarantee that Bob gets the smallest in the next round. Meaning, we would have to consider all possible routes. Hmmm smells like DP in here.
 
-
-
 # Code
 
 ### Python3
@@ -29,15 +27,15 @@ def stoneGame(self, piles: List[int]) -> bool:
         if playerTurn == 0:  # alice
             stones = max(piles[start] + dfs(arr, 1, start+1, end, memo), \
                             piles[end] + dfs(arr, 1, start, end-1, memo))
-        
+
         else:
             stones = min(dfs(arr, 0, start+1, end, memo) -piles[start], \
                             dfs(arr, 0, start, end-1, memo) -piles[end])
-                        
+
         memo[(start, end)] = stones
 
         return stones
-    
+
     return dfs(piles, 0, 0, len(piles)-1, defaultdict()) > 0
 ```
 
@@ -45,7 +43,7 @@ def stoneGame(self, piles: List[int]) -> bool:
 
 - Runtime
 
-  The runtime complexity here is $O(N)$ since by memoisation we reduce the duplicate calculations and each element is visited at most once. 
+  The runtime complexity here is $O(N)$ since by memoisation we reduce the duplicate calculations and each element is visited at most once.
 
 - Memory
 
@@ -53,4 +51,4 @@ def stoneGame(self, piles: List[int]) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

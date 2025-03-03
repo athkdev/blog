@@ -1,10 +1,8 @@
 ---
 title: 215 Kth Largest Element in an Array
 tags:
-    - medium
+  - medium
 ---
-
-
 
 As we have seen earlier, questions that require you the k-th minimum/maximum/largest/smallest are a great way to exercise your heap datastructure skills.
 
@@ -27,7 +25,7 @@ class Solution {
             kTh.add(a);
             if (kTh.size() > k) kTh.poll();
         }
-        
+
         return kTh.peek();
     }
 }
@@ -36,14 +34,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O (n * log(n))$ as since the heap insertion and deletion takes $O (log(n))$ time and we would do that for all the $n$ elements in the array.
-    
+  The runtime complexity here is $O (n * log(n))$ as since the heap insertion and deletion takes $O (log(n))$ time and we would do that for all the $n$ elements in the array.
 - Memory
-    
-    The memory usage is $O (k)$ since we are maintaining a priority queue (heap) of k elements.
-    
+  The memory usage is $O (k)$ since we are maintaining a priority queue (heap) of k elements.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -8,7 +8,6 @@ tags:
 
 Fairly, straight-forward problem. To find the center of the graph in this case where the center is a neighbor with every node other than itself - is the same as finding the node with the most neighbors.
 
-
 # Code
 
 ### Go
@@ -49,4 +48,4 @@ func findCenter(edges [][]int) int {
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

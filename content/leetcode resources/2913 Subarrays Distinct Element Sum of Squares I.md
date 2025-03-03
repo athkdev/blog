@@ -1,14 +1,12 @@
 ---
 title: 2913 Subarrays Distinct Element Sum of Squares I
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem asks us to find calculate the sum of squares of distinct number of characters in each subarray in the input array `nums`.
 
-To find subarrays, we can use backtracking, or simply two for loops if we do not care about the order in the way the subsets are generated. 
+To find subarrays, we can use backtracking, or simply two for loops if we do not care about the order in the way the subsets are generated.
 
 I would strongly recommend checking out another way to generate subsets explained beautifully in this book - [Competitive Programming by Antti Laaksonen](https://cses.fi/book/book.pdf) - page 58 of the pdf, section titled “Method 2”.
 
@@ -26,21 +24,17 @@ class Solution:
             for j in range(len(nums)):
                 if len(nums[i:j+1]) >= 1:
                     ret += len(set(nums[i:j+1])) ** 2
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `$O (N^N)$` where N = length of list `nums` .
-    
+  The runtime complexity here is `$O (N^N)$` where N = length of list `nums` .
 - Memory
-    
-    Constant space! Since we don’t use any extra data structure.
-    
+  Constant space! Since we don’t use any extra data structure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

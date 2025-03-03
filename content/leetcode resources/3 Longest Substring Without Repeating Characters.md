@@ -1,12 +1,10 @@
 ---
 title: 3 Longest Substring Without Repeating Characters
 tags:
-    - medium
+  - medium
 ---
 
-
-
-To solve a problem of this sort, I must understand the concept of a `sliding window` . When you have linear data structures to work with like arrays, lists, or strings - you can always maintain a window (fixed or sliding) and move it over the array. Think of it like this - when you are iterating over an array one element at a time, you are (in a way) maintaining a window of `n = 1`. 
+To solve a problem of this sort, I must understand the concept of a `sliding window` . When you have linear data structures to work with like arrays, lists, or strings - you can always maintain a window (fixed or sliding) and move it over the array. Think of it like this - when you are iterating over an array one element at a time, you are (in a way) maintaining a window of `n = 1`.
 
 # Code:
 
@@ -28,7 +26,7 @@ class Solution:
             else:
                 lookup.add(s[right])
                 right += 1
-            max_len = max(max_len, right-left) 
+            max_len = max(max_len, right-left)
         return max_len
 ```
 
@@ -40,8 +38,8 @@ The space complexity is `O(N)` as well, because the set we are using can increas
 
 ### Optimization:
 
-The space can be optimized - use a `HashMap` or `Array` to keep running track if we  have encountered any alphabets - in our window. This would be constant space `O(1)` as there are only 26 alphabets = `O(26) = O(1)`
+The space can be optimized - use a `HashMap` or `Array` to keep running track if we have encountered any alphabets - in our window. This would be constant space `O(1)` as there are only 26 alphabets = `O(26) = O(1)`
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

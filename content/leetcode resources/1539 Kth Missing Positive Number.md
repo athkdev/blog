@@ -7,8 +7,7 @@ tags:
 
 # Intuition
 
-The fundamental idea here is that we can calculate the number of missing integers on an index. 
-
+The fundamental idea here is that we can calculate the number of missing integers on an index.
 
 In an "ideal" list where no number is missing, `arr[i] = i+1`. So, if there's a mismatch in this logic, we can find number of missing numbers by `missing = arr[i] - (i+1)`.
 
@@ -26,7 +25,7 @@ def findKthPositive(self, arr: List[int], k: int) -> int:
         return k + len(arr)
 
     left, right = 0, len(arr)-1
-    
+
     while left <= right:
         mid = (left + right) // 2
         missing = arr[mid] - (mid+1)
@@ -35,7 +34,7 @@ def findKthPositive(self, arr: List[int], k: int) -> int:
             left = mid + 1
         else:
             right = mid - 1
-    
+
     return k + right + 1
 ```
 
@@ -51,4 +50,4 @@ def findKthPositive(self, arr: List[int], k: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

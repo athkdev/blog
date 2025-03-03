@@ -7,12 +7,12 @@ tags:
 ---
 
 # Intuition
+
 This problem is very important and fundamental for the understanding of how Binary Search Trees work because it leverages on a BST feature.
 
 We are required to replace each node's val with the it's own value **plus** sum of all values greater than it.
 
 In a BST, all values on the right are greater than the values on the left. This makes coming to a solution easy, now we just have to sum up all right values, set the node's value and call the same function on the left nodes.
-
 
 > Note: this problem is duplicated in [[/leetcode resources/538 Convert BST to Greater Tree]]
 
@@ -34,7 +34,7 @@ class Solution:
             dfs(node.left)
 
             return node
-        
+
         return dfs(root)
 ```
 
@@ -50,4 +50,4 @@ class Solution:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

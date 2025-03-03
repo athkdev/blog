@@ -1,10 +1,8 @@
 ---
 title: 133 Clone Graph
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We are required to clone a graph, where “cloning” implies a deep copy, creating an exact same graph with the same values, but none of the nodes can have the same memory as the original graph.
 
@@ -26,7 +24,7 @@ The basic idea is very similar to other graph, matrices and trees problems.
 class Solution {
     public Node cloneGraph(Node node) {
         if (node==null) return null;
-        
+
         Node[] visited = new Node[101];
         Arrays.fill(visited,null);
         Node copy = new Node(node.val);
@@ -54,14 +52,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would visit all nodes atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would visit all nodes atleast once.
 - Memory
-    
-    The memory usage is `O(N)` since we use a visited array. In this particular case, $1 <= N <= 100$
-    
+  The memory usage is `O(N)` since we use a visited array. In this particular case, $1 <= N <= 100$
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

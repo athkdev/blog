@@ -1,10 +1,8 @@
 ---
 title: 424 Longest Repeating Character Replacement
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem asks to find the longest substring with repeating characters that contains $k$ characters that could be replaced with the current maximum frequency character.
 
@@ -15,18 +13,16 @@ We use a count array to keep frequencies of characters in the current window. We
 $$
 windowMaxFreq = max(windowMaxFreq, count[c - 'A']+1)
 \\
-window Size = right - left + 1 \; 
+window Size = right - left + 1 \;
 \\
 toReplace = windowSize - windowMaxFreq
 $$
 
 > Note 1: using a character array to store frequencies is a good way as iterating over it is constant time (there are only 26 alphabets)
-> 
 
-> Note 2: `count[c - 'A']`  maps our character to its corresponding alphabetical order
-For eg. if c = ‘B’ → `count['B' - 'A']` → `count[66 - 65]` → `count[1]`
-Similarly, if I wanted to map lowercase english alphabets, I can use `c - 'a'`
-> 
+> Note 2: `count[c - 'A']` maps our character to its corresponding alphabetical order
+> For eg. if c = ‘B’ → `count['B' - 'A']` → `count[66 - 65]` → `count[1]`
+> Similarly, if I wanted to map lowercase english alphabets, I can use `c - 'a'`
 
 # Code:
 
@@ -37,7 +33,7 @@ class Solution {
     public int characterReplacement(String s, int k) {
         int[] count = new int[26];
 
-        int left = 0, res = Integer.MIN_VALUE; 
+        int left = 0, res = Integer.MIN_VALUE;
         int windowMaxFreq = 0;
 
         for (int right = 0; right<s.length(); ++right) {
@@ -65,14 +61,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n) \; where \; n=s.length$.
-    
+  The runtime complexity here is $O(n) \; where \; n=s.length$.
 - Memory
-    
-    The memory usage is $O(1)$. Although we are using an array count, its always going to be of length 26, constant space!.
-    
+  The memory usage is $O(1)$. Although we are using an array count, its always going to be of length 26, constant space!.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,22 +1,18 @@
 ---
 title: 46 Permutations
 tags:
-    - medium
+  - medium
 ---
 
+This is a very (very) crucial problem because if forms the base of many other problems. It uses the fundamental algorithm pattern called **backtracking**. Don’t let the name scare you, if you have solved any easy tree problems chances are pretty good that you’ve already used a backtracking algorithm. Yes, the DFS! Depth First Search is a backtracking algorithm as by definition it brute-forces through all possible outcomes.
 
+The above problem, provides us an `int` array and asks us to generate all possible permutations of it. It is important to understand the key difference between _permutations and combinations_ though. While very similar, the major difference between the two is the ordering of characters in each of them. For eg. a permutation is an **ordered** set, while a combination is an **unordered** set. So, the string `"abc"` is different than `"bac"` in a permutation while in a combination they are the same thing.
 
-This is a very (very) crucial problem because if forms the base of many other problems. It uses the fundamental algorithm pattern called **backtracking**. Don’t let the name scare you, if you have solved any easy tree problems chances are pretty good that you’ve already used a backtracking algorithm. Yes, the DFS! Depth First Search is a backtracking algorithm as by definition it brute-forces through all possible outcomes. 
-
-The above problem, provides us an `int` array and asks us to generate all possible permutations of it. It is important to understand the key difference between *permutations and combinations* though. While very similar, the major difference between the two is the ordering of characters in each of them. For eg. a permutation is an **ordered** set, while a combination is an **unordered** set. So, the string `"abc"` is different than `"bac"` in a permutation while in a combination they are the same thing.
-
-For conceptual understanding, take a look at the recursive tree below. Each node represents a recursive function call, the yellow letters denote the options available at that call. Suppose our input is `str = "abc"`. As any recursive function requires a base case, the base case here is satisfied whenever the current permutation (that we are building in each function call) reaches the length of the input. 
+For conceptual understanding, take a look at the recursive tree below. Each node represents a recursive function call, the yellow letters denote the options available at that call. Suppose our input is `str = "abc"`. As any recursive function requires a base case, the base case here is satisfied whenever the current permutation (that we are building in each function call) reaches the length of the input.
 
 ![Untitled](46%20Permutations%2023e1aed1243f489f9c076da2671361b7/Untitled.png)
 
-As you might have noticed by now, the algorithm needs to you make choices and then undo those choices when required. Below if a *pseudocode* of a backtracking algorithm:
-
- 
+As you might have noticed by now, the algorithm needs to you make choices and then undo those choices when required. Below if a _pseudocode_ of a backtracking algorithm:
 
 ```jsx
 function backtrack(arr, s):
@@ -27,7 +23,7 @@ function backtrack(arr, s):
 	for choice in choices:
 		if choice is valid:
 			make choice
-			backtrack(arr, s)		
+			backtrack(arr, s)
 			undo choice
 ```
 
@@ -48,7 +44,7 @@ public:
 
         for (int i=0;i<nums.size();i++) {
             if (!used[i]) {  // checking if choice is valid
-                
+
 								// making choices
 								used[i] = true;
                 current.push_back(nums[i]);
@@ -82,7 +78,7 @@ public:
 };
 ```
 
-We are using `vector<bool> used` which is same size of input (`vector<int> nums`). This is so that we remember if any element is a valid option to use or not (see the yellow character in the string example above). 
+We are using `vector<bool> used` which is same size of input (`vector<int> nums`). This is so that we remember if any element is a valid option to use or not (see the yellow character in the string example above).
 
 ### Big O Analysis
 
@@ -92,4 +88,4 @@ The space complexity is `O(N!)` as well, the result vector will contain N! strin
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,9 +1,8 @@
 ---
 title: 896 Monotonic Array
 tags:
-    - medium
+  - medium
 ---
-
 
 # 896. Monotonic Array
 
@@ -36,4 +35,4 @@ public:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

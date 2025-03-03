@@ -46,9 +46,9 @@ def shipWithinDays(self, weights: List[int], D: int) -> int:
             if loaded > capacity:
                 loaded = w
                 days_required += 1
-        
+
         return days_required <= D
-    
+
 
     left, right = max(weights), sum(weights)
 
@@ -59,7 +59,7 @@ def shipWithinDays(self, weights: List[int], D: int) -> int:
             right = cur_capacity
         else:
             left = cur_capacity + 1
-        
+
         return left
 ```
 
@@ -75,4 +75,4 @@ def shipWithinDays(self, weights: List[int], D: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

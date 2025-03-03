@@ -23,7 +23,7 @@ def replaceDigits(self, s: str) -> str:
         if s[i].isdigit():
             v[i] = chr(ord(s[i-1]) + int(s[i]))
             continue
-        
+
     return ''.join(v)
 ```
 
@@ -39,4 +39,4 @@ def replaceDigits(self, s: str) -> str:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

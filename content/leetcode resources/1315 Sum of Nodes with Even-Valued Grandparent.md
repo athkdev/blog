@@ -10,9 +10,7 @@ tags:
 
 We track the current node, it's parent and it's grand-parent all in one scope.
 
-
 When we are advancing in the tree - the current node becomes the parent, and the previous parent becomes the current grand-parent.
-
 
 Then we just check if `grandparent` is not None and `grandparent.val % 2 == 0` - if yes then add to answer.
 
@@ -22,20 +20,20 @@ Then we just check if `grandparent` is not None and `grandparent.val % 2 == 0` -
 
 ```python
 def sumEvenGrandparent(self, root: TreeNode) -> int:
-    
+
     def dfs(node, parent, grandparent):
         if not node: return 0
 
         total = 0
-        
+
         if grandparent and grandparent.val % 2 == 0:
             total += node.val
-        
+
         total += dfs(node.left, node, parent)
         total += dfs(node.right, node, parent)
 
         return total
-    
+
     return dfs(root, None, None)
 ```
 
@@ -51,4 +49,4 @@ def sumEvenGrandparent(self, root: TreeNode) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

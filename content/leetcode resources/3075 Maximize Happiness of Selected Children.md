@@ -1,10 +1,8 @@
 ---
 title: 3075 Maximize Happiness of Selected Children
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem requires us to maximize happiness of a group with `k` children. The caveat is that for every child included in the group, the happiness for all other children decrements by 1, though it caps at 0 and cannot be negative.
 
@@ -37,21 +35,17 @@ class Solution:
             ret += max(0, happiness[i] - turns)
             i -= 1
             turns += 1
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime here is $O(N * log (N))$ since we are sorting the array.
-    
+  The runtime here is $O(N * log (N))$ since we are sorting the array.
 - Memory
-    
-    Constant space! 
-    
+  Constant space!
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

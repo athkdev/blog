@@ -25,12 +25,11 @@ def makeSmallestPalindrome(self, s: str) -> str:
     while left < right:
         if v[left] != v[right]:
             v[left] = v[right] = min(v[right], v[left])
-        
+
         left += 1; right -= 1
-    
+
     return ''.join(v)
 ```
-
 
 ### Big O Analysis
 
@@ -44,4 +43,4 @@ def makeSmallestPalindrome(self, s: str) -> str:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

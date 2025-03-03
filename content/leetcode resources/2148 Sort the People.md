@@ -7,6 +7,7 @@ tags:
 ---
 
 # Intuition
+
 (A) zip the names and corresponding heights
 (B) sort array with respect to the heights
 (C) return only the names
@@ -32,4 +33,4 @@ def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

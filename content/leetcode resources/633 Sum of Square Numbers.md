@@ -22,7 +22,7 @@ def judgeSquareSum(self, c: int) -> bool:
          if x == c: return True
          elif x < c: a += 1
          elif x > c: b -= 1
-    
+
     return False
 ```
 
@@ -38,4 +38,4 @@ def judgeSquareSum(self, c: int) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

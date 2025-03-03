@@ -11,7 +11,7 @@ A brute force approach to this is to test every possible rates.
 
 But it would be quadratic time - so to optimize it we use binary search over the possible rates because of which we are skipping a few rates.
 
-So we design a function `feasible` that determines if the current rate that we are testing fits our criteria or not. 
+So we design a function `feasible` that determines if the current rate that we are testing fits our criteria or not.
 
 If it does (i.e. `return True`) - we narrow our search space to the left side. This implies that our guessed rate was too high and we look into the left side to see if there are any smaller rates that we can find.
 
@@ -37,10 +37,10 @@ So once this algorithm is finished running, our `left` pointer would be pointing
 
 ```python
 def minEatingSpeed(self, piles: List[int], h: int) -> int:
-    
+
     def feasible(rate):
         return sum(ceil(p / rate) for p in piles) <= h
-    
+
     left, right = 1, max(piles)
 
     while left < right:
@@ -50,7 +50,7 @@ def minEatingSpeed(self, piles: List[int], h: int) -> int:
             right = speed
         else:
             left = speed + 1
-    
+
     return left
 ```
 
@@ -66,4 +66,4 @@ def minEatingSpeed(self, piles: List[int], h: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

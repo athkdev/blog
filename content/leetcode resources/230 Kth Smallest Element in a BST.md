@@ -14,7 +14,6 @@ Well, to solve this problem we could put all the elements in an array, sort it a
 
 We could use this property to get sorted elements during traversal in `O(N)` time. Think about it, if my left nodes are smaller than the parent, and right nodes are greater than the parent - my left-most node would be the smallest element in the tree, and right-most element would be the largest element.
 
-
 Meaning - to get elements in a sorted order, one must recursively make all `left` calls, work on them, then finally make all `right` calls. Sounds like `in-order` traversal.
 
 # Code
@@ -38,7 +37,7 @@ def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
             return
 
         dfs(node.right, cnt)
-    
+
     dfs(root, 0)
     return self.res
 ```
@@ -55,4 +54,4 @@ def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -10,9 +10,7 @@ tags:
 
 The problem is straightforward in that we iterate till the second last element and keep on adding a new node after the current node we are at.
 
-
-We calculate the GCD using a function (or by yourself) - and point our `current.next` to `new_gcd_node`.  Also remember to save `current.next` in a temp variable since it's necessary for traversing.
-
+We calculate the GCD using a function (or by yourself) - and point our `current.next` to `new_gcd_node`. Also remember to save `current.next` in a temp variable since it's necessary for traversing.
 
 Also, ensure to point `new_gcd_node.next` to the temp variable you saved. This way insertion is complete.
 
@@ -22,7 +20,7 @@ Also, ensure to point `new_gcd_node.next` to the temp variable you saved. This w
 
 ```python
 def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
-    result = ListNode(0) 
+    result = ListNode(0)
     result.next = head
     cur = head
 
@@ -51,4 +49,4 @@ def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[Lis
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

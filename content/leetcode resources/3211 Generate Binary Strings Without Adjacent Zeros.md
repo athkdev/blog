@@ -17,21 +17,21 @@ tags:
 def validstrings(self, n: int) -> list[str]:
 
     result = []
-    
+
     def helper(s):
         '''
         recursively build string s, append a zero only if previous char is not a zero
-        
+
         append a one regardless
         '''
         if len(s) == n:
             result.append(s)
             return
-        
+
         helper(s + '1')
         if s[-1] == '1':
             helper(s + '0')
-        
+
     helper('0')  # for binary strings starting with zeros
     helper('1')  # for binary strings starting with ones
 
@@ -50,4 +50,4 @@ def validstrings(self, n: int) -> list[str]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

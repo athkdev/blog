@@ -16,7 +16,6 @@ So I realise that `level order traversal` or `breadth first search` is a good ap
 
 > Note: had it been a question to find the _left side view_ of the tree, instead of appending the last element of the level, we must append the first element.
 
-
 # Code
 
 ### Python3
@@ -24,7 +23,7 @@ So I realise that `level order traversal` or `breadth first search` is a good ap
 ```python
 def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
     '''
-    level order traversal might help: 
+    level order traversal might help:
 
     store all nodes in the current level and only return the rightmost (last-most) added node
     '''
@@ -41,15 +40,15 @@ def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         for _ in range(n):
             cur = queue.pop()
             level.append(cur)
-            
+
             if cur.left:
                 queue.appendleft(cur.left)
-            
+
             if cur.right:
                 queue.appendleft(cur.right)
-        
+
         res.append(level[-1].val)
-    
+
     return res
 ```
 
@@ -65,4 +64,4 @@ def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

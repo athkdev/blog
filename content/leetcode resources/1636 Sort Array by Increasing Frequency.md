@@ -2,7 +2,7 @@
 title: 1636 Sort Array by Increasing Frequency
 date: 2024-07-23
 tags:
-    - easy
+  - easy
 ---
 
 # Intuition
@@ -12,7 +12,6 @@ Build a frequency table of the list elements, then sort with respect to the freq
 Note: For Python programmers, if two elements with same frequency comes up, then it's asked that the elements with same frequency are ordered in an descending order.
 
 To do this, provide with a tuple to the key function instead of the regular comparator. Here, ordering will take place w.r.t `tuple[0]`, but if this is same for multiple values, then Python uses `tuple[1]` for ordering.
-
 
 # Code
 
@@ -37,4 +36,4 @@ def frequencySort(self, nums: List[int]) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

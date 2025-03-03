@@ -13,7 +13,7 @@ We are required to count and return occurences of elements that are present in b
 
 ```python
 def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-    
+
     c1 = Counter(nums1)
     c2 = Counter(nums2)
 
@@ -29,7 +29,7 @@ def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
                 del c1[a]
             if c2[a] == 0:
                 del c2[a]
-    
+
     return res
 ```
 
@@ -45,4 +45,4 @@ def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

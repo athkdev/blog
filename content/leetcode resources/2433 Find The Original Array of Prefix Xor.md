@@ -11,6 +11,7 @@ XOR is a reversible operation.
 Let's prove this logically.
 
 Properties of XOR:
+
 ```python
     A ^ A = 0    ___ eq(1)
 
@@ -22,14 +23,14 @@ Suppose, `A ^ B = C`
 `C ^ A = B` and `C ^ B = A`
 
 **How?**
-`A ^ B ^ A = C ^ A` 
-`B ^ 0 = C ^ A`     - from eq(1)
-`B = C ^ A`         - from eq(2)
+`A ^ B ^ A = C ^ A`
+`B ^ 0 = C ^ A` - from eq(1)
+`B = C ^ A` - from eq(2)
 
-Similarly, 
-`A ^ B ^ B = C ^ B` 
-`A ^ 0 = C ^ B`     - from eq(1)
-`A = C ^ B`         - from eq(2)
+Similarly,
+`A ^ B ^ B = C ^ B`
+`A ^ 0 = C ^ B` - from eq(1)
+`A = C ^ B` - from eq(2)
 
 So, just by using this property, we keep track of prefix XORs in `pref[i-1]` and update `pref[i]`
 
@@ -59,4 +60,4 @@ class Solution:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

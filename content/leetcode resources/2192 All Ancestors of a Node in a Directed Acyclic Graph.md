@@ -19,7 +19,6 @@ But you can imagine, when we calculate an ancestor list `anc_list_u` for a node 
 
 So to tackle that, our sub-problem computes ancestors in a set to avoid duplicates. The problem also asks us that every thing is sorted, so we throw in a `sorted()` there too.
 
-
 # Code
 
 ### Python3
@@ -42,7 +41,7 @@ def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
     '''
     rootNodes are the nodes with in-degree == 0
     '''
-    
+
     def helper(g, n: int, m) -> List[int]:
         '''
         recursively compute all the ancestors of a node in a reversed DAG
@@ -71,7 +70,7 @@ def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
         ancestors = helper(revAdj, val, memo)
         if len(ancestors) == 0:
             memo[val] = ancestors
-        
+
 
     '''
     subproblem:
@@ -103,4 +102,4 @@ def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

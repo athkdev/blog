@@ -1,20 +1,18 @@
 ---
 title: Leetcode w me
 tags:
-    - medium
+  - medium
 ---
-
 
 # Leetcode w me
 
 > Press `Ctrl + k` for quick search.
-> 
 
 Want to chill with music while you come up with a solution? Visit [Code Radio](https://coderadio.freecodecamp.org/) <3 .
 
 ---
 
-[1**. Two Sum (pending)**](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1%20Two%20Sum%20(pending)%200e180f2347de47188d1b48b961e38ea6.md)
+[1**. Two Sum (pending)**](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1%20Two%20Sum%20(pending)%200e180f2347de47188d1b48b961e38ea6.md>)
 
 [[**83. Remove Duplicates from Sorted List**](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/83%20Remove%20Duplicates%20from%20Sorted%20List%201ef2d10d76f8414586536c1fbbe8952f.md)
 
@@ -40,7 +38,7 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[**463. Island Perimeter**](https://leetcode.com/problems/island-perimeter/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/463%20Island%20Perimeter%20bdb26e6a698f41ad89941106e25e1a0b.md)
 
-[509. Fibonacci Number (pending) (2)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/509%20Fibonacci%20Number%20(pending)%20(2)%2059538bec54bf4516b43556a69872fcd3.md)
+[509. Fibonacci Number (pending) (2)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/509%20Fibonacci%20Number%20(pending)%20(2)%2059538bec54bf4516b43556a69872fcd3.md>)
 
 [[**680. Valid Palindrome II**](https://leetcode.com/problems/valid-palindrome-ii/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/680%20Valid%20Palindrome%20II%209532df44d01c48749878e17dd44e5a71.md)
 
@@ -54,7 +52,7 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [1046. Last Stone Weight](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1046%20Last%20Stone%20Weight%20f4be4ae7d7c44e1382fc80097fc28c6d.md)
 
-[1137. N-th Tribonacci Number (pending) (1)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1137%20N-th%20Tribonacci%20Number%20(pending)%20(1)%20e10ba01a26204e2fa779f955ff23a29b.md)
+[1137. N-th Tribonacci Number (pending) (1)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1137%20N-th%20Tribonacci%20Number%20(pending)%20(1)%20e10ba01a26204e2fa779f955ff23a29b.md>)
 
 [**1143. Longest Common Subsequence**](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1143%20Longest%20Common%20Subsequence%200cd2c048ee6e4d4eb8cccf6732f97c45.md)
 
@@ -66,7 +64,7 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[**1614. Maximum Nesting Depth of the Parentheses**](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1614%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses%20f717ad558d414361a6d18843b8623ca8.md)
 
-[1732. Find the Highest Altitude (pending)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1732%20Find%20the%20Highest%20Altitude%20(pending)%2040c12c04eda6482eaf9decaafe26c44e.md)
+[1732. Find the Highest Altitude (pending)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1732%20Find%20the%20Highest%20Altitude%20(pending)%2040c12c04eda6482eaf9decaafe26c44e.md>)
 
 [[**1903. Largest Odd Number in String**](https://leetcode.com/problems/largest-odd-number-in-string/description)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1903%20Largest%20Odd%20Number%20in%20String%20cdfbc882b1834706b4b99bcdcc804496.md)
 
@@ -96,7 +94,7 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[**5. Longest Palindromic Substring**](https://leetcode.com/problems/longest-palindromic-substring/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/5%20Longest%20Palindromic%20Substring%20efe5cf985e734acba7f8cf36798c7fd3.md)
 
-[[**11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) (pending)**](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/11%20Container%20With%20Most%20Water%20(pending)%20503b9036403a4806a66437c0a6c646cf.md)
+[[**11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) (pending)**](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/11%20Container%20With%20Most%20Water%20(pending)%20503b9036403a4806a66437c0a6c646cf.md>)
 
 [[**15. 3Sum**](https://leetcode.com/problems/3sum/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/15%203Sum%20d5415536e7364351b6c9ea421bf3f29c.md)
 
@@ -112,7 +110,7 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[**49. Group Anagrams**](https://leetcode.com/problems/group-anagrams/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/49%20Group%20Anagrams%2083e3d7c42df443119446de7c809dc549.md)
 
-[[**50. Pow(x, n)**](https://leetcode.com/problems/powx-n/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/50%20Pow(x,%20n)%20cdd41f354eb34b2da2288afb80dbccfb.md)
+[[**50. Pow(x, n)**](https://leetcode.com/problems/powx-n/description/)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/50%20Pow(x,%20n)%20cdd41f354eb34b2da2288afb80dbccfb.md>)
 
 [[**53. Maximum Subarray**](https://leetcode.com/problems/maximum-subarray/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/53%20Maximum%20Subarray%208581db7ba4e74e15a5194e74164a7bb5.md)
 
@@ -188,9 +186,9 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[**994. Rotting Oranges**](https://leetcode.com/problems/rotting-oranges/description/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/994%20Rotting%20Oranges%203c967842b4564d8eac490b46209c2c5b.md)
 
-[1027. Longest Arithmetic Subsequence (Pending)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1027%20Longest%20Arithmetic%20Subsequence%20(Pending)%20d801b08ec1494341991584e98f76edd1.md)
+[1027. Longest Arithmetic Subsequence (Pending)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1027%20Longest%20Arithmetic%20Subsequence%20(Pending)%20d801b08ec1494341991584e98f76edd1.md>)
 
-[1143. Longest Common Subsequence (Pending)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1143%20Longest%20Common%20Subsequence%20(Pending)%200c71f64086c24beb99c56fc6dba77565.md)
+[1143. Longest Common Subsequence (Pending)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1143%20Longest%20Common%20Subsequence%20(Pending)%200c71f64086c24beb99c56fc6dba77565.md>)
 
 [[**1208. Get Equal Substrings Within Budget**](https://leetcode.com/problems/get-equal-substrings-within-budget/description)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1208%20Get%20Equal%20Substrings%20Within%20Budget%203711678e8b994ee4ac13e87263893668.md)
 
@@ -234,9 +232,9 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 [[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/42%20Trapping%20Rain%20Water%208316da84216543148213023521f61e7b.md)
 
-[1547. Minimum Cost to Cut a Stick (yet to solve)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1547%20Minimum%20Cost%20to%20Cut%20a%20Stick%20(yet%20to%20solve)%200854088e788a46459076a5987e9001b5.md)
+[1547. Minimum Cost to Cut a Stick (yet to solve)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1547%20Minimum%20Cost%20to%20Cut%20a%20Stick%20(yet%20to%20solve)%200854088e788a46459076a5987e9001b5.md>)
 
-[**1575. Count All Possible Routes** (yet to solve)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1575%20Count%20All%20Possible%20Routes%20(yet%20to%20solve)%20e7e3c1c098fa4156acd4a7b6e737ed41.md)
+[**1575. Count All Possible Routes** (yet to solve)](<Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/1575%20Count%20All%20Possible%20Routes%20(yet%20to%20solve)%20e7e3c1c098fa4156acd4a7b6e737ed41.md>)
 
 [2448. Minimum Cost to Make Array Equal (debug/pending)](Leetcode%20w%20me%20753a277aeab2456d9773478ef0d11a3c/2448%20Minimum%20Cost%20to%20Make%20Array%20Equal%20(debug%20pendi%2027504f87dda845d19c15c2ecf3a1d3f2.md)
 
@@ -246,6 +244,6 @@ Want to chill with music while you come up with a solution? Visit [Code Radio](h
 
 ---
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)
 
 **`Made with ❤️ by [Atharva](http://atharvakamble.github.io)`**

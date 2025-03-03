@@ -1,10 +1,8 @@
 ---
 title: 2744 Find Maximum Number of String Pairs
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Brute force through out since the input size is quite small (`1 <= words.length <= 50`)
 
@@ -32,21 +30,17 @@ class Solution:
         for i in range(len(words)):
             for j in range(i):
                 if words[i] == words[j][::-1]: ret += 1
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` where N = length of list `words`. 
-    
+  The runtime complexity here is `O(N)` where N = length of list `words`.
 - Memory
-    
-    The memory usage is `O(N)` since we use a `ret` string.
-    
+  The memory usage is `O(N)` since we use a `ret` string.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

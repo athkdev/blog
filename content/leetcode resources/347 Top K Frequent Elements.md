@@ -1,10 +1,8 @@
 ---
 title: 347 Top K Frequent Elements
 tags:
-    - medium
+  - medium
 ---
-
-
 
 There are two approaches that simultaneously come to my mind, but both of them have the same time complexity. The fundamental differences between those approaches is that one uses a heap and the other uses sorting. (psst I like that heap one more ;p )
 
@@ -39,7 +37,7 @@ class Solution:
 
             if len(elements) > k:
                 heappop(elements)                   # O(log N)
-            
+
         return [t[1] for t in elements]             # O (N)
 ```
 
@@ -55,7 +53,7 @@ class Solution:
                 freq[x] += 1
             else:
                 freq[x] = 1
-        
+
         freq = dict(sorted(freq.items(), key=lambda x: x[1], reverse=True)) # O (n log n)
 
         tmp = list(freq.keys())
@@ -65,21 +63,17 @@ class Solution:
         for i in range(k):
             ret.append(tmp[i])
 
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n\;log(n))$ for both solutions.
-    
+  The runtime complexity here is $O(n\;log(n))$ for both solutions.
 - Memory
-    
-    The memory usage is $O(N)$ for both solutions since we use a dictionary and a heap.
-    
+  The memory usage is $O(N)$ for both solutions since we use a dictionary and a heap.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

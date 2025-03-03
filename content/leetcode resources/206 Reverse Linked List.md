@@ -1,9 +1,8 @@
 ---
 title: 206 Reverse Linked List
 tags:
-    - medium
+  - medium
 ---
-
 
 # 206. Reverse Linked List
 
@@ -21,7 +20,7 @@ class Node<T> {
 }
 ```
 
-To reverse a linked list, we need **four** important steps including traversing the list. For every node, we are 
+To reverse a linked list, we need **four** important steps including traversing the list. For every node, we are
 
 1. storing the direct next variable temporarily (`next = current.next`).
 2. updating the next of the current node to the previous. This is where the “reversing” happens. (`current.next = prev`) (Remember `prev` would be initially `null`, which is correct because the previous of the `head` will be a `null` pointer.)
@@ -55,4 +54,4 @@ class Solution {
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

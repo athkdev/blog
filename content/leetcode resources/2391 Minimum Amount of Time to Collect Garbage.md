@@ -1,10 +1,8 @@
 ---
 title: 2391 Minimum Amount of Time to Collect Garbage
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This problem uses the technique of prefix sum as well like a few of other problems you might have come across in this list.
 
@@ -13,7 +11,6 @@ We are given a travel array that consists of distance in minutes from house i to
 We want to keep track of what the last house visited by each garbage truck is. We can use an array or a hashmap for this. Finally, we get the time taken by garbage truck for ‘G’, ‘P’ and ‘M’ from the truck and their corresponding entry in the travel array.
 
 > Note: Remember the travel array can be used universally by all the trucks.
-> 
 
 # Code:
 
@@ -46,14 +43,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$ .
-    
+  The runtime complexity here is $O(N)$ .
 - Memory
-    
-    The memory usage is `O(N)` . We do have a prefixSum array that varies as per travel.length → which varies as per garbage.length. Although, we are using an hashmap - the number of entries would always be the types of garbaghe which in this case is glass, paper and metal.
-    
+  The memory usage is `O(N)` . We do have a prefixSum array that varies as per travel.length → which varies as per garbage.length. Although, we are using an hashmap - the number of entries would always be the types of garbaghe which in this case is glass, paper and metal.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

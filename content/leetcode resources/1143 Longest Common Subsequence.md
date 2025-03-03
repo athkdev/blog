@@ -1,10 +1,8 @@
 ---
 title: 1143 Longest Common Subsequence
 tags:
-    - medium
+  - medium
 ---
-
-
 
 # Code:
 
@@ -25,14 +23,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(nm)$ where $n == len(text1)$ and $m == len(text2)$
-    
+  The runtime complexity here is $O(nm)$ where $n == len(text1)$ and $m == len(text2)$
 - Memory
-    
-    The memory usage is $O(1)$ since we are not using any extra datastructure.
-    
+  The memory usage is $O(1)$ since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

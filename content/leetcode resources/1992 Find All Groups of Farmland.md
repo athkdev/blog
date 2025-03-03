@@ -1,14 +1,12 @@
 ---
 title: 1992 Find All Groups of Farmland
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem is straightforward and since the constraints are smaller, one can brute force through it.
 
-A good hint that is present in the problem in the problem is that all farmlands are rectangular and there won't be irregular sizes of farmlands adjacent to each other. If you would remember this is identical to the problem of finding how many ways to get from point `(R1, C1)`  to point `(R2, C2)`  where you can go only right or bottom directions. In that problem, we make DFS calls in only right and bottom directions. Something like this:
+A good hint that is present in the problem in the problem is that all farmlands are rectangular and there won't be irregular sizes of farmlands adjacent to each other. If you would remember this is identical to the problem of finding how many ways to get from point `(R1, C1)` to point `(R2, C2)` where you can go only right or bottom directions. In that problem, we make DFS calls in only right and bottom directions. Something like this:
 
 ```python
 bottom = dfs(i + 1, j)
@@ -36,14 +34,14 @@ class Solution:
         def dfs(i, j, land):
             if i < 0 or j < 0 or i >= m or j >= n or land[i][j] == 0:
                 return (0,0)
-            
+
             land[i][j] = 0
 
             right = dfs(i+1, j, land)
             bottom = dfs(i, j+1, land)
 
             return (max(right[0], bottom[0], i), max(right[1], bottom[1], j))
-        
+
         for i in range(m):
             for j in range(n):
                 if land[i][j] == 0: continue
@@ -51,23 +49,19 @@ class Solution:
                 x, y = dfs(i, j, land)
 
                 ret.append([i,j,x,y])
-        
+
         return ret
-            
+
 
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructure.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

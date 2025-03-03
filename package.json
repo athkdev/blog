@@ -9,7 +9,7 @@
   "homepage": "https://athk.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AtharvaKamble/blog.git"
+    "url": "https://github.com/athkdev/blog.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",

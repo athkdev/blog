@@ -1,10 +1,8 @@
 ---
 title: 1535 Find the Winner of an Array Game
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Tricky question: it tricks you into believing that you need to look out for `k iterations` - BUT WHEN IN REALITY ONCE A NUMBER LOSES TO ANOTHER NUMBER, IT’S NEVER GOING TO WIN SO YOU CAN TRASH IT.
 
@@ -32,21 +30,17 @@ class Solution:
             else:
                 lookup.add(s[right])
                 right += 1
-            max_len = max(max_len, right-left) 
+            max_len = max(max_len, right-left)
         return max_len
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array once.
 - Memory
-    
-    The memory usage is `O(1)`
-    
+  The memory usage is `O(1)`
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

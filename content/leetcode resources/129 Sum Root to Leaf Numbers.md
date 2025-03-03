@@ -1,10 +1,8 @@
 ---
 title: 129 Sum Root to Leaf Numbers
 tags:
-    - medium
+  - medium
 ---
-
-
 
 A very good problem that tests your fundamental knowledge of how trees work. The algorithm is pretty straightforward, until you come across a leaf node, just keep track of all node’s values visited in the form of a number (or a string). Once you reach a leaf, return the number stored, and call the function recursively on other nodes.
 
@@ -28,21 +26,17 @@ class Solution:
                 return int(cur + f'{node.val}')
 
             return dfs(node.left, cur + f'{node.val}') + dfs(node.right, cur + f'{node.val}')
-        
+
         return dfs(root, '')
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would visit all nodes atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would visit all nodes atleast once.
 - Memory
-    
-    The memory usage is `O(N)`, since the tree is recursive, we would use the implicit call stack.
-    
+  The memory usage is `O(N)`, since the tree is recursive, we would use the implicit call stack.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

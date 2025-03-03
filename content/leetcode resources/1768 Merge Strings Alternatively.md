@@ -11,7 +11,6 @@ We are required to merge two strings such that the resulting string has alternat
 
 Sounds straightforward, but what about the edge-case that one of the string is shorter than the other? In that case we do the alternating - till that index in both strings and then just concatenate the remainder of the substring from the longer string. Now does it sound straightforward? Worry not, it is from here.
 
-
 # Code
 
 ### Python3
@@ -37,13 +36,13 @@ def mergeAlternately(self, word1: str, word2: str) -> str:
     while p2 < len(word2):
         res += word2[p2]
         p2 += 1
-    
+
 
     return res
 
     '''
 
-    a b c p q r s 
+    a b c p q r s
     0 1 2 3 4 5
 
     result = apbqcr
@@ -62,4 +61,4 @@ def mergeAlternately(self, word1: str, word2: str) -> str:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

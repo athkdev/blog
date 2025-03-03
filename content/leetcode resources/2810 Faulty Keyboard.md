@@ -1,5 +1,5 @@
 ---
-title: 2810 Faulty Keyboard 
+title: 2810 Faulty Keyboard
 date: 2024-08-05
 tags:
   - easy
@@ -31,7 +31,7 @@ def finalString(self, s: str) -> str:
             d.append(c)
         else:
             d.appendleft(c)
-    
+
     return ''.join(d) if not flip else ''.join(list(d)[::-1])
 ```
 
@@ -47,4 +47,4 @@ def finalString(self, s: str) -> str:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

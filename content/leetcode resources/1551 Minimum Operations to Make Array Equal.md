@@ -1,10 +1,8 @@
 ---
 title: 1551 Minimum Operations to Make Array Equal
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We are required to calculate the minimum number of operations required to make the array equal. Now, the input array that we are given always stays the same just that the length changes as per input. Every element in the array $ar[i] = (2*i) + 1$, so the array becomes $ar = [1, 3, 5, 7, 9, ...., (2 *(n - 1)) + 1]$.
 
@@ -15,7 +13,6 @@ So, we use two pointers on opposite ends of the array and reduce elements one at
 But this solution is very inefficient, $O(N^2)$. For optimizing, we can get rid of one inner nested loop by subtracting the current $ar[left]\; or\; ar[right]$ from the median and adding it to the result.
 
 > Note: there’s also a mathematical solution that I highly encourage going over since it’s constant time and space. I haven’t posted that here cuz it would require larger explanation and it’s less programming implementation. Feel free to go over this [leetcode solution](https://leetcode.com/problems/minimum-operations-to-make-array-equal/solutions/1145082/simple-o-1-1-liner-easy-solution-w-explanation-beats-100).
-> 
 
 # Code:
 
@@ -37,7 +34,7 @@ class Solution:
         res = 0
         while left <= right:
 						# optimization - instead of a while loop to simulate reducing elements, do subtraction
-            res += median - ar[left]       
+            res += median - ar[left]
             ar[left] = median - ar[left]
             ar[right] = ar[right] - median
             left += 1
@@ -49,14 +46,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$ .
-    
+  The runtime complexity here is $O(N)$ .
 - Memory
-    
-    The memory usage is $O(N)$ since we create an input space array of size N.
-    
+  The memory usage is $O(N)$ since we create an input space array of size N.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

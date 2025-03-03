@@ -9,7 +9,6 @@ tags:
 
 We are required to compute the number of bottles that is drinkable. A twist in the problem is that after every session of drinking all the bottles, we can exhange the empty bottles for more bottles (depending on the `numExchange`).
 
-
 # Code
 
 ### Python3
@@ -38,4 +37,4 @@ def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

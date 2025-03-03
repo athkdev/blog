@@ -24,7 +24,7 @@ def change(self, amount: int, coins: List[int]) -> int:
 
         include = dfs(balance - coins[start], start, memo)
         exclude = dfs(balance, start + 1, memo)
-        
+
         memo[(start, balance)] = include + exclude
 
         return memo[(start, balance)]
@@ -44,4 +44,4 @@ def change(self, amount: int, coins: List[int]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

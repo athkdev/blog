@@ -6,11 +6,9 @@ tags:
   - dynamic programming
 ---
 
-We need to enumerate all paths and then keep track of the smallest path sum. 
-
+We need to enumerate all paths and then keep track of the smallest path sum.
 
 Again, let's use `reduction` to reduce this problem into smaller problems. To comupte the minimum path sum from `(0,0)` to `(m,n)`, we would first need to know the minimum path sum till `(m-1, n)` and `(m, n-1)`.
-
 
 Once we have reduced our problem, we can put into a recursive statement and we are done.
 
@@ -20,18 +18,18 @@ Once we have reduced our problem, we can put into a recursive statement and we a
 
 ```python
   def minPathSum(self, grid: List[List[int]]) -> int:
-      
+
 
       @functools.cache
       def compute_sum(i, j):
           if i < 0 or j < 0:
               return sys.maxsize
-          
+
           # if i == 0 and j == 0:
           #     return grid[i][j]
-          
+
           return grid[i][j] + min(compute_sum(i-1, j), compute_sum(i, j-1))
-      
+
 
       m, n = len(grid), len(grid[0])
 
@@ -50,4 +48,4 @@ Once we have reduced our problem, we can put into a recursive statement and we a
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

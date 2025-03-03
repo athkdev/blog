@@ -31,4 +31,4 @@ Convert the occurences `.values()` into a set, and check if it's same as the num
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,9 +1,8 @@
 ---
 title: 1442 Count Triplets That Can Form Two Arrays of Eq
 tags:
-    - medium
+  - medium
 ---
-
 
 # 1442. Count Triplets That Can Form Two Arrays of Equal XOR
 
@@ -31,27 +30,23 @@ class Solution:
 
         for i in range(n):
             prefix[i+1] = prefix[i] ^ A[i]
-            
-        
+
+
         ret = 0
         for i in range(n):
             for k in range(i+1, n):
                 if prefix[i] == prefix[k+1]: ret += (k-i)
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N * K)` .
-    
+  The runtime complexity here is `O(N * K)` .
 - Memory
-    
-    The memory usage is `O(N)`  since we use the prefix array that uses linear space.
-    
+  The memory usage is `O(N)` since we use the prefix array that uses linear space.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

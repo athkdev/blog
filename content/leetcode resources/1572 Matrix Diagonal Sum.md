@@ -1,10 +1,8 @@
 ---
 title: 1572 Matrix Diagonal Sum
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem asks to find the sum of both diagonals in a square matrix. This is fairly straightforward. Now, if you are a programmer who knows concepts such as DFS, BFS you would realize that you don’t need to traverse the matrix in a $O(N^2)$ manner, you can just get the diagonals.
 
@@ -28,8 +26,8 @@ class Solution:
             i += 1
             j += 1
 
-        i, j = 0, R - 1 
-        while i < R: 
+        i, j = 0, R - 1
+        while i < R:
             ans += mat[i][j]
             i += 1
             j -= 1
@@ -42,14 +40,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string at least once.
-    
+  The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string at least once.
 - Memory
-    
-    The memory usage is $O(1)$ since we are using a set to store visited points.
-    
+  The memory usage is $O(1)$ since we are using a set to store visited points.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

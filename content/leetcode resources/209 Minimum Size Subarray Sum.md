@@ -24,9 +24,9 @@ Another approach is to have a prefix sum array which helps us compute range/suba
 
 ```python
 def minSubArrayLen(self, target: int, A: List[int]) -> int:
-    
+
     ret = 10**6
-    left = 0 
+    left = 0
     cur_sum = 0
 
     for right in range(len(A)):
@@ -46,7 +46,7 @@ def minSubArrayLen(self, target: int, A: List[int]) -> int:
 ```python
 def minSubArrayLen(self, target: int, A: List[int]) -> int:
     n = len(A)
-    
+
     # Create the prefix sum array
     prefix = [0] * (n + 1)
     for i in range(1, n + 1):
@@ -54,14 +54,14 @@ def minSubArrayLen(self, target: int, A: List[int]) -> int:
 
     ret = 10**6
     left = 0
-    
+
     for right in range(1, n + 1):
         # Use binary search or linear scan to find the smallest left such that
         # prefix[right] - prefix[left] >= target
         while prefix[right] - prefix[left] >= target:
             ret = min(ret, right - left)
             left += 1
-    
+
     return ret if ret != 10**6 else 0
 ```
 
@@ -77,4 +77,4 @@ def minSubArrayLen(self, target: int, A: List[int]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -14,14 +14,12 @@ The criteria is that the contenders are standing in a circular line, and we are 
 
 This is the perfect use case of the `modulo` operator. The nature of the modulo operator simulates a circular list, which is exactly what we want.
 
-> If `A` < `B`, 
-then `A` % `B` = `A`
+> If `A` < `B`,
+> then `A` % `B` = `A`
 
-> If `A` > `B`, 
-then `A` % `B` = `C`
-where `C` is the remainder of `A` and `B`
-
-
+> If `A` > `B`,
+> then `A` % `B` = `C`
+> where `C` is the remainder of `A` and `B`
 
 # Code
 
@@ -37,7 +35,7 @@ def findTheWinner(self, n: int, k: int) -> int:
         roundLoser = (roundLoser + k - 1) % len(ar)
 
         del ar[roundLoser]
-    
+
     return ar[-1]
 ```
 
@@ -53,4 +51,4 @@ def findTheWinner(self, n: int, k: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

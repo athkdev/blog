@@ -1,10 +1,8 @@
 ---
 title: 110 Balanced Binary Tree
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem states: a height-balanced binary tree is a tree in which the difference of heights of children of a node should not exceed 1.
 
@@ -38,14 +36,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(log N)` .
-    
+  The runtime complexity here is `O(log N)` .
 - Memory
-    
-    The memory usage is `O(N)` since we would use the implicit call stack.
-    
+  The memory usage is `O(N)` since we would use the implicit call stack.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

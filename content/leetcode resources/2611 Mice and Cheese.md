@@ -7,9 +7,7 @@ tags:
 
 Mouse 1 can eat `k` types of cheese. Mouse 2 can eat all of them. Cheese at index `i` can only be eaten by one of the two mice at a time.
 
-
 That means, if mouse 1 eats `rewards1[2]`, mouse 2 cannot eat cheese at index 2.
-
 
 Since our goal is maximising - mouse 1 should eat the top k rewarding cheeses, and the remaining ones are automatically eaten by mouse 2.
 
@@ -20,7 +18,7 @@ Since our goal is maximising - mouse 1 should eat the top k rewarding cheeses, a
 ```python
 def miceAndCheese(self, reward1: List[int], reward2: List[int], k: int) -> int:
     if k == 0: return sum(reward2)
-    
+
     indices = set(
         i for _, i in sorted(
             ((a - b, i) for i, (a, b) in enumerate(zip(reward1, reward2))),
@@ -44,4 +42,4 @@ def miceAndCheese(self, reward1: List[int], reward2: List[int], k: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

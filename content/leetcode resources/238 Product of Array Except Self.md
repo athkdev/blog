@@ -1,10 +1,8 @@
 ---
 title: 238 Product of Array Except Self
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We want the result to contain an array where $R[i] = \prod_{0}^{R.length} R[n]$ where $i != n$.
 
@@ -55,14 +53,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` .
-    
+  The runtime complexity here is `O(N)` .
 - Memory
-    
-    The memory usage is `O(N)` since we use a prefix and suffix arrays of $N$.
-    
+  The memory usage is `O(N)` since we use a prefix and suffix arrays of $N$.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -14,7 +14,6 @@ We are using set arithmetic, namely `difference` -> `set(A) - set(B)` will creat
 
 If you are interested in learning more about set arithmetic, look into `set union`, `set intersection` and `set difference`. Check out this [link](https://note.nkmk.me/en/python-set/)
 
-
 # Code
 
 ### Python3
@@ -36,4 +35,4 @@ def checkIfPangram(self, sentence: str) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

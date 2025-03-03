@@ -4273,7 +4273,7 @@ var sharedPageComponents = {
   header: [],
   footer: Footer_default({
     links: {
-      GitHub: "https://github.com/AtharvaKamble",
+      GitHub: "https://github.com/athkdev",
       Twitter: "https://x.com/AtharvaKamble07",
       "athk.dev (my site)": "https://athk.dev"
     }

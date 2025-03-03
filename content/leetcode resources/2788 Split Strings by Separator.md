@@ -1,10 +1,8 @@
 ---
 title: 2788 Split Strings by Separator
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This problem is just an implementation detail and does not require any algorithmic thinking whatsoever. But there’s a peculiarity in it regarding how regex works.
 
@@ -25,7 +23,7 @@ class Solution {
             for (String sw: splitWords) {
                 if (sw.length()>0) res.add(sw);
             }
-            
+
         }
 
         return res;
@@ -36,14 +34,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N*K)`, where K is length of the largest word in the array.
-    
+  The runtime complexity here is `O(N*K)`, where K is length of the largest word in the array.
 - Memory
-    
-    The memory usage is `O(1)` since we don’t use any extra datastructure.
-    
+  The memory usage is `O(1)` since we don’t use any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,14 +1,12 @@
 ---
 title: 713 Subarray Product Less Than K
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This problem gives the impression of being difficult but is actually pretty chill. 🗿
 
-The test cases make it look like you need some complex backtracking stuff, but it’s just sliding window. 
+The test cases make it look like you need some complex backtracking stuff, but it’s just sliding window.
 
 We move over the window and once product reaches over $k$, we start shrinking from the $left$ pointer. This code snippet is very common in dynamic sliding window patterns, you would see a lot of them.
 
@@ -31,21 +29,17 @@ class Solution:
                 left += 1
 
             res += right - left + 1
-        
+
         return res
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$ since we are visiting all elements once.
-    
+  The runtime complexity here is $O(N)$ since we are visiting all elements once.
 - Memory
-    
-    The memory usage is  $O (1)$.
-    
+  The memory usage is $O (1)$.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

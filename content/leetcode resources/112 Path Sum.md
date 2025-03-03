@@ -7,6 +7,7 @@ tags:
 ---
 
 # Intuition
+
 We are required to track the sum of our current values and when we reach a leaf node, we verify if our sum has reached the `targetSum`. If it has, good on us - if no, keep searching.
 
 The line `res = dfs(node.left, total+node.val) or dfs(node.right, total+node.right)` is very important here - it basically says, look for the condition of the path sum, in the left OR the right sub-tree.
@@ -22,11 +23,11 @@ def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
 
         if total + node.val == targetSum and not node.left and not node.right:
             return True
-        
+
         res = dfs(node.left, total + node.val) or dfs(node.right, total + node.val)
 
         return res
-        
+
 
     return dfs(root, 0)
 ```
@@ -43,4 +44,4 @@ def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

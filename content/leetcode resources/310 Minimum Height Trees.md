@@ -1,10 +1,8 @@
 ---
 title: 310 Minimum Height Trees
 tags:
-    - medium
+  - medium
 ---
-
-
 
 One approach that might come to your head (at least it did for me) is to do a BFS from each node $0...(N-1)$. Doing BFS will gives us the maximum distance between two nodes in each of the graphs. But this gives a TLE, and fails like 10 cases for the problem as of April 23$^{th}$ 2024.
 
@@ -33,17 +31,17 @@ class Solution:
             adj[v].append(u)
             indegree[u] += 1
             indegree[v] += 1
-        
+
         Q = deque()
 
         for i, ii in enumerate(indegree):
             if ii == 1: Q.appendleft(i) ; indegree[i] -= 1
-        
+
         ret = []
         while Q:
             N = len(Q)
             del ret[:]
-            
+
             for i in range(N):
                 cur = Q.pop()
                 ret.append(cur)
@@ -52,21 +50,17 @@ class Solution:
                 for neighbor in adj[cur]:
                     indegree[neighbor] -= 1
                     if indegree[neighbor] == 1: Q.appendleft(neighbor)
-        
+
         return rets
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(V + E)$ where V = number of vertices/nodes and E = number of edges.
-    
+  The runtime complexity here is $O(V + E)$ where V = number of vertices/nodes and E = number of edges.
 - Memory
-    
-    The memory usage is $O(V)$ excluding the adjacency list because that counts as the input, including the adjacency list would be $O(V+E)$.
-    
+  The memory usage is $O(V)$ excluding the adjacency list because that counts as the input, including the adjacency list would be $O(V+E)$.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

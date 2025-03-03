@@ -7,13 +7,13 @@ tags:
 
 Brute force solution is to use double for loops to look for all combinations. But that is a lot of redundant lookups.
 
-
 A better approach is to re-arrange the equation,
+
 $$
 j - i = nums[j] - nums[i]
 $$
 
-to 
+to
 
 $$
 nums[i] - i = nums[j] - j
@@ -21,10 +21,10 @@ $$
 
 This way, we can store the differences of `nums[i] - i` to check how many such occurrences are found. Note: that these are the good pairs.
 
-We need to find bad pairs, for that we can remove number of good pairs from total pairs. 
+We need to find bad pairs, for that we can remove number of good pairs from total pairs.
 
+Total pairs are given by:
 
-Total pairs are given by: 
 $$
 N * (N-1) / 2
 $$
@@ -62,4 +62,4 @@ def countBadPairs(self, A: List[int]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

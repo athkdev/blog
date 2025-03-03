@@ -1,9 +1,8 @@
 ---
 title: 1689 Partitioning Into Minimum Number Of Deci-Bina
 tags:
-    - medium
+  - medium
 ---
-
 
 # 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
 
@@ -34,14 +33,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as where $N =  len(input)$ since finding the max in a string/list is linear operation.
-    
+  The runtime complexity here is `O(N)` as where $N =  len(input)$ since finding the max in a string/list is linear operation.
 - Memory
-    
-    Constant space!
-    
+  Constant space!
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

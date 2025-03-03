@@ -1,10 +1,8 @@
 ---
 title: 921 Minimum Add to Make Parentheses Valid
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Well, this is very similar to the Valid Parentheses problem, where you have to return true or false if the parentheses string is valid or not respectively. This one’s the same, just that you have to return how many parentheses change would it take to make the string valid.
 
@@ -26,24 +24,20 @@ class Solution:
                 if S and S[-1] == '(':
                     S.pop()
                     continue
-            
+
             S.append(p)
 
-        
+
         return len(S)
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$  since we would visit all parentheses in the string.
-    
+  The runtime complexity here is $O(N)$ since we would visit all parentheses in the string.
 - Memory
-    
-    The memory usage is $O(N)$ since we use a stack to store parentheses state.
-    
+  The memory usage is $O(N)$ since we use a stack to store parentheses state.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

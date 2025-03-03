@@ -7,9 +7,7 @@ tags:
 
 When you try to implement just the bare bones, it runs out of memory for larger values of m, and n.
 
-
 The optimization here is the realization that the ranges go from $0...a_i$ and $0...b_i$. That means the resultant matrix we are looking for will always be in the top left corner.
-
 
 So, we need to find the dimensions of the smallest sub-matrix that could be formed from the operations given - that will have gone through the most number of increments.
 
@@ -40,4 +38,4 @@ def maxCount(self, m: int, n: int, ops: List[List[int]]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

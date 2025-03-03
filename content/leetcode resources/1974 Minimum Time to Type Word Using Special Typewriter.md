@@ -22,14 +22,14 @@ def minTimeToType(self, word: str) -> int:
     seconds = 0
 
     seconds += min(26 - first_dist, first_dist)
-    seconds += 1   # enter first key 
+    seconds += 1   # enter first key
 
     for i in range(1, len(word)):
         dist = abs(ord(word[i]) - ord(word[i-1]))
-        
+
         seconds += min(26 - dist, dist)  # time taken to get to key
         seconds += 1  # time taken to enter key
-    
+
     return seconds
 ```
 
@@ -45,4 +45,4 @@ def minTimeToType(self, word: str) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

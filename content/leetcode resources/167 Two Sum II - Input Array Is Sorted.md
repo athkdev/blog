@@ -1,10 +1,8 @@
 ---
 title: 167 Two Sum II - Input Array Is Sorted
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Like 2Sum, instead of maintaining a hashmap (which would be $O(N)$ memory), try to use constant space. Now, unlike 2Sum the input array is sorted. Sure you can sort the array in the original 2Sum too, but it’s a famous problem for hashmaps.
 
@@ -41,14 +39,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array atleast once.
 - Memory
-    
-    The memory usage is `O(1)` since we are not using any extra datastructure.
-    
+  The memory usage is `O(1)` since we are not using any extra datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

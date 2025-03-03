@@ -1,20 +1,18 @@
 ---
 title: 278 First Bad Version
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Given `n` versions we are required to find the first bad version since every following version after the first bad version is bad. We know for a fact that `n`th version is bad, we need to find out when did it start going bad.
 
-This problem is identical to finding the pivot in a rotated sorted array. Searching in a linear manner can sure find the first bad version, but it won’t be very efficient. If  $n = 10^{10}$, searching is going to be time-consuming. Instead, lets just do a binary search - 
+This problem is identical to finding the pivot in a rotated sorted array. Searching in a linear manner can sure find the first bad version, but it won’t be very efficient. If $n = 10^{10}$, searching is going to be time-consuming. Instead, lets just do a binary search -
 
 ```markdown
 1. Calculate pivot (mid)
 2. Check if version at mid is bad.
-		2.1. If yes, then check to it's left because we don't know if this is the first bad version
-		2.2. If no, check to the right of pivot (mid)
+   2.1. If yes, then check to it's left because we don't know if this is the first bad version
+   2.2. If no, check to the right of pivot (mid)
 3. Finally, if we would arrive at a point where both left and right pointers would coincide - this is the first bad version
 ```
 
@@ -50,14 +48,10 @@ public class Solution extends VersionControl {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(log N)`  - Binary Search!.
-    
+  The runtime complexity here is `O(log N)` - Binary Search!.
 - Memory
-    
-    The memory usage is `O(1)` since we no linear/non-linear data structure used.
-    
+  The memory usage is `O(1)` since we no linear/non-linear data structure used.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

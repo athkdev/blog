@@ -8,7 +8,7 @@ tags:
 
 # Intuition
 
-We are required to search a node in a Binary Search Tree with respect to it's value. Carefully note, that we are provided with a Binary Search Tree and not just a Binary Tree. 
+We are required to search a node in a Binary Search Tree with respect to it's value. Carefully note, that we are provided with a Binary Search Tree and not just a Binary Tree.
 
 A Binary Search Tree is a special Binary Tree where `root.left.val < root.val` and `root.right.val > root.val`. It also does not allow duplicates in the tree.
 
@@ -42,4 +42,4 @@ def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

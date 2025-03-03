@@ -34,7 +34,7 @@ class Solution:
             inorder(node.left)
             sortedTree.append(node)
             inorder(node.right)
-        
+
         inorder(root)
 
         def sortedArrToBST(start: int, end: int):
@@ -47,11 +47,12 @@ class Solution:
             curRoot.right = sortedArrToBST(mid+1, end)
 
             return curRoot
-        
+
         return sortedArrToBST(0, len(sortedTree)-1)
 ```
 
 ### Go
+
 ```go
 /**
  * Definition for a binary tree node.
@@ -91,10 +92,10 @@ func sortedArrToBst(start, end int, sorted []*TreeNode) *TreeNode {
 
     mid := (start + end) / 2
 
-    curRoot := sorted[mid] 
+    curRoot := sorted[mid]
     curRoot.Left = sortedArrToBst(start, mid - 1, sorted)
     curRoot.Right = sortedArrToBst(mid + 1, end, sorted)
-    
+
     return curRoot
 }
 ```
@@ -111,4 +112,4 @@ func sortedArrToBst(start, end int, sorted []*TreeNode) *TreeNode {
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

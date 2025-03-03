@@ -1,12 +1,10 @@
 ---
 title: 1137 N-th Tribonacci Number (pending) (1)
 tags:
-    - medium
+  - medium
 ---
 
-
-
-[Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/) 
+[Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 
 (explaination pending)
 
@@ -46,7 +44,7 @@ public:
         memo[n-1] = prev1;
         memo[n-2] = prev2;
         memo[n-3] = prev3;
-        
+
         return prev1+prev2+prev3;
     }
 };
@@ -56,4 +54,4 @@ public:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

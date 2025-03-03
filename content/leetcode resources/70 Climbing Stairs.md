@@ -27,7 +27,7 @@ If this feels very similar to a Fibonacci sequence - it's because it is :)
 ```python
 
 def climbStairs(self, n: int) -> int:
-    
+
     '''
     at each step we have two choices: two take the next step, OR take the next-to-next step
 
@@ -64,4 +64,4 @@ def climbStairs(self, n: int) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

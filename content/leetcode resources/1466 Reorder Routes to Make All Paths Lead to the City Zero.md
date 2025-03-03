@@ -10,17 +10,13 @@ tags:
 
 We are given a directed graph and want to count how many edges are not pointing toward the center (in our case the node 0).
 
-
-Since this is a graph and graphs are recursive structures - think of solving a smaller sub-problem that will lead to the answer. 
-
+Since this is a graph and graphs are recursive structures - think of solving a smaller sub-problem that will lead to the answer.
 
 Such as the is the child of `Node(0)` is pointing toward it or not. How can we check this? Well - maintain another graph with reverse edges and check if the child node is a indegree connection for `Node(0)`.
 
+If they are then count them (rememeber we are referencing the reversed graph to know if a child node points away from the parent node). This is the **_subproblem_** I was talking about.
 
-If they are then count them (rememeber we are referencing the reversed graph to know if a child node points away from the parent node). This is the **_subproblem_** I was talking about. 
-
-
-The underline is that: all child nodes must be pointing toward their parent nodes (considering we are starting our DFS from 0). 
+The underline is that: all child nodes must be pointing toward their parent nodes (considering we are starting our DFS from 0).
 
 # Code
 
@@ -29,10 +25,10 @@ The underline is that: all child nodes must be pointing toward their parent node
 ```python
 def minReorder(self, n: int, connections: List[List[int]]) -> int:
     self.result = 0
-    
+
     indegrees = [[] for _ in range(n)]
     graph = defaultdict(list)   # un-directed graph
-    
+
     for u, v in connections:
         graph[u].append(v)
         graph[v].append(u)
@@ -44,14 +40,14 @@ def minReorder(self, n: int, connections: List[List[int]]) -> int:
     def dfs(node, parent):
         nonlocal visited
 
-        if visited[node]: return 
+        if visited[node]: return
 
         if not node in indegrees[parent]:
             self.result += 1
 
         for neighbor in graph[node]:
             visited[node] = True
-            
+
             dfs(neighbor, node)
             visited[node] = False
 
@@ -71,4 +67,4 @@ def minReorder(self, n: int, connections: List[List[int]]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

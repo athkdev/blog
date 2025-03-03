@@ -1,12 +1,10 @@
 ---
 title: 1496 Path Crossing
 tags:
-    - medium
+  - medium
 ---
 
-
-
-This is a problem that involves just simulating what’s stated in the problem. There’s no hidden trick, or optimization - simply simulate a point moving from $(0,0)$ to the directions given in the string. We use a set to store all visited points starting with  $(0,0)$. If we come across any point that’s already visited, we return True, else False.
+This is a problem that involves just simulating what’s stated in the problem. There’s no hidden trick, or optimization - simply simulate a point moving from $(0,0)$ to the directions given in the string. We use a set to store all visited points starting with $(0,0)$. If we come across any point that’s already visited, we return True, else False.
 
 # Code:
 
@@ -27,22 +25,18 @@ class Solution:
 
             if (dx, dy) in vis: return True
             else: vis.add((dx,dy))
-        
-        
+
+
         return False
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string at least once.
-    
+  The runtime complexity here is $O(n)$ as since we would be visiting all characters in the string at least once.
 - Memory
-    
-    The memory usage is $O(n)$ since we are using a set to store visited points.
-    
+  The memory usage is $O(n)$ since we are using a set to store visited points.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

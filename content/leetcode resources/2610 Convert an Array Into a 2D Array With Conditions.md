@@ -4,11 +4,9 @@ tags:
   - medium
 ---
 
-Since every row in our result array can have only distinct elements, we need a data structure that is known for holding distinct values - **drumrolls** - a set or a hashtable. Let's use a hashtable since we need the frequencies of each elements as well. 
+Since every row in our result array can have only distinct elements, we need a data structure that is known for holding distinct values - **drumrolls** - a set or a hashtable. Let's use a hashtable since we need the frequencies of each elements as well.
 
 The number of rows in the result array would be the maximum frequency of an element.
-
-
 
 # Code:
 
@@ -38,4 +36,4 @@ def findMatrix(self, nums: List[int]) -> List[List[int]]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

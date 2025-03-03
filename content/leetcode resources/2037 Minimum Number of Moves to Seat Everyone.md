@@ -2,7 +2,7 @@
 title: 2037 Minimum Number of Moves to Seat Everyone
 date: 2024-06-12
 tags:
-  - easy 
+  - easy
   - relative sorting
   - zip
 ---
@@ -37,4 +37,4 @@ def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

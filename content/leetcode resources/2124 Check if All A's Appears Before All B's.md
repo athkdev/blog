@@ -13,23 +13,22 @@ PS: This problem is pre-requisite to [[/leetcode resources/1653 Minimum Deletion
 
 > Make sure to checkout [[/leetcode resources/678 Valid Parenthesis String]] as it uses a similar strategy of counting
 
-
 # Code
 
 ### Python3
 
 ```python
 def checkString(self, s: str) -> bool:
-    
+
     secondPhase = False
 
     for c in s:
         if c == 'b':
             secondPhase = True
-        
+
         if secondPhase and c == 'a':
             return False
-        
+
     return True
 ```
 
@@ -45,4 +44,4 @@ def checkString(self, s: str) -> bool:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

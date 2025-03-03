@@ -9,7 +9,7 @@ tags:
 
 This problem is sequel problem to [[/leetcode resources/1974 Minimum Time to Type Word Using Special Typewriter]] - check that out first so this problem will get easy.
 
-We greedily assign the most frequently typed characters to the starting positions of the keys (eg. first, second, etc). 
+We greedily assign the most frequently typed characters to the starting positions of the keys (eg. first, second, etc).
 
 # Code
 
@@ -34,7 +34,7 @@ def minimumPushes(self, word: str) -> int:
         if keys <= 0:
             keys = 8 # if all keys are exhausted, replenish the keys
             times += 1  # start assigning the keys to the next positions
-        
+
         res += (v * times)
         keys -= 1
 
@@ -53,4 +53,4 @@ def minimumPushes(self, word: str) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

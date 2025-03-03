@@ -8,6 +8,7 @@ tags:
 ---
 
 # Intuition
+
 We are required to return the vertices that are starting points to other nodes such that all nodes could be visited.
 
 This means, we are needed to compute nodes who do not have any incoming edges, rather only outgoing edges.
@@ -18,9 +19,7 @@ We are interested in the in-degree of vertices. The `in-degree` of root vertices
 
 When we build an adjacency list, length of the neighbors list for any node - is basically the `in-degree` of that node. But for this problem, I do not build an adjacency list - rather we just store the children nodes and all nodes. Any node that is not a child node, but is also present in the `allnodes` set, is a starting node.
 
-
 > Follow-up: try solving the problem using an adjacency list and not sets.
-
 
 # Code
 
@@ -28,16 +27,16 @@ When we build an adjacency list, length of the neighbors list for any node - is 
 
 ```python
 def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
-    
+
     children = set()
     allnodes = set()
 
     for u, v in edges:
         children.add(v)
-        
+
         allnodes.add(u)
         allnodes.add(v)
-    
+
     return list(allnodes - children)
 ```
 
@@ -53,4 +52,4 @@ def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -18,7 +18,6 @@ Follow up: Can you structure it such that a new TreeNode is attached and not a r
 
 > The code for this is quite tricky to get one's head around atleast for some time - it sure was for me haha.
 
-
 # Code
 
 ### Python3
@@ -28,7 +27,7 @@ def mergeTrees(self, t1: Optional[TreeNode], t2: Optional[TreeNode]) -> Optional
     '''
     merge two trees t1 and t2 and return the root
     '''
-    
+
     if t1 and t2:
         '''
         both positions in both trees exist
@@ -39,7 +38,7 @@ def mergeTrees(self, t1: Optional[TreeNode], t2: Optional[TreeNode]) -> Optional
         result_tree.right = self.mergeTrees(t1.right, t2.right)
 
         return result_tree
-    
+
     else:
         '''
         either node in t1 does not exist, or node in t2 does not exist, OR both does not exist
@@ -59,4 +58,4 @@ def mergeTrees(self, t1: Optional[TreeNode], t2: Optional[TreeNode]) -> Optional
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

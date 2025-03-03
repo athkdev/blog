@@ -1,10 +1,8 @@
 ---
 title: 623 Add One Row to Tree
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem asks to add a row to a tree. Trying to reverse engineer this, I understand that adding a row is the same as adding nodes at a single depth in every branch from root till leaf.
 
@@ -47,25 +45,21 @@ class Solution:
             dfs(node.left, height + 1)
             dfs(node.right, height + 1)
 
-            
+
             return node
 
-        
+
         return dfs(root, 1)
-        
+
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$, where N = number of nodes in the tree. 
-    
+  The runtime complexity here is $O(N)$, where N = number of nodes in the tree.
 - Memory
-    
-    The memory usage is $O(N)$, it’s the implicit call stack since we are building the tree recursively.
-    
+  The memory usage is $O(N)$, it’s the implicit call stack since we are building the tree recursively.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

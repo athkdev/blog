@@ -10,9 +10,7 @@ tags:
 
 The problem is straight forward in that we need to insert another list in between list 1. We are given `a` and `b` - so we need to insert `list2` in place of $a^{th}$ to $b^{th}$ nodes.
 
-
 If we have the node just before the $a^{th}$ nodes, we can just `startNode.next = list2`.
-
 
 Similarly, if we have the corresponding $b^{th}$ node, we can just `list2.next = endNode` - given we iterate `list2` till the end.
 
@@ -66,4 +64,4 @@ def mergeInBetween(self, l1: ListNode, a: int, b: int, l2: ListNode) -> ListNode
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

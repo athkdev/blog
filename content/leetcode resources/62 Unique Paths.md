@@ -6,8 +6,7 @@ tags:
   - dynamic programming
 ---
 
-This is a classic dynamic programming problem. We need to count how many ways exist when we start from the top-left cell in the grid and make way till the bottom-right cell. 
-
+This is a classic dynamic programming problem. We need to count how many ways exist when we start from the top-left cell in the grid and make way till the bottom-right cell.
 
 Let's think about reduction. Reduction is the process of breaking down a problem into smaller sub-problems. To calculate the number of ways to reach cell `(m, n)` - is basically the number of ways to reach cell `(m-1, n)` PLUS the number of ways to reach cell `(m, n-1)`.
 
@@ -23,12 +22,12 @@ Note: the number of ways to go from `(0,0)` to `(m, n)` == the number of ways to
       # (m-1, n) OR (m, n-1)
 
       @functools.cache
-      def compute(i, j):  
+      def compute(i, j):
           if i == 0 or j == 0:
               return 1
-          
+
           return compute(i-1, j) + compute(i, j-1)
-      
+
 
       return compute(m-1, n-1)
 ```
@@ -45,4 +44,4 @@ Note: the number of ways to go from `(0,0)` to `(m, n)` == the number of ways to
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

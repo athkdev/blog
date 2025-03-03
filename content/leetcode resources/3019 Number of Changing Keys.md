@@ -22,7 +22,7 @@ def countKeyChanges(self, s: str) -> int:
 
     for c, n in itertools.pairwise(list(s.lower())):
         ret += (1 if c != n else 0)
-    
+
     return ret
 ```
 
@@ -45,4 +45,4 @@ def countKeyChanges(self, s: str) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

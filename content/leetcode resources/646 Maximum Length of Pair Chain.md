@@ -15,11 +15,11 @@ This problem does have a greedy solution, but I wanted to practice me some good 
 All possibilities of pair combinations can be checked as far as the condition `p1[1] < p2[0]` is met to make a chain. Then keep track of the maxchain length.
 
 Note: remember that when we check all possibilities, it's basically a decision tree. And how do we find the longest length (a.k.a depth) of any branch in a tree? By DFS-ing and increasing result by one.
+
 ```python
     leftDepth = 1 + dfs(node.left)
     rightDepth = 1 + dfs(node.right)
 ```
-
 
 # Code
 
@@ -34,7 +34,7 @@ def findLongestChain(self, pairs: List[List[int]]) -> int:
 
         if start >= len(arr):
             return
-        
+
         maxChain = 1    # a single element is a valid chain <- so the minimum is 1
 
         for end in range(start+1, len(arr)):
@@ -44,9 +44,9 @@ def findLongestChain(self, pairs: List[List[int]]) -> int:
                 maxChain = max(maxChain, 1 + dfs(arr, end, memo))
 
         memo[start] = maxChain
-        
+
         return maxChain
-    
+
     return dfs(pairs, 0, defaultdict(int))
 ```
 
@@ -62,4 +62,4 @@ def findLongestChain(self, pairs: List[List[int]]) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

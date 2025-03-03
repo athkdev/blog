@@ -1,12 +1,10 @@
 ---
 title: 42 Trapping Rain Water
 tags:
-    - medium
+  - medium
 ---
 
-
-
-This is the famously dreaded problem which is also asked quiet frequently in interviews. It’s dreaded because of how it manages engineers to overthink a solution because it has a leetcode hard tag. 
+This is the famously dreaded problem which is also asked quiet frequently in interviews. It’s dreaded because of how it manages engineers to overthink a solution because it has a leetcode hard tag.
 
 I mean the intuition behind it is not exactly easy, but the solution is to it is very elegant once you understand the basic idea behind it.
 
@@ -28,28 +26,24 @@ class Solution:
             maxL[i] = max(height[i-1], maxL[i-1])
         for i in range(n-2, -1, -1):
             maxR[i] = max(height[i+1], maxR[i+1])
-        
+
         ret = 0
         for i,h in enumerate(height):
             cur_height = min(maxL[i], maxR[i])
 
             if cur_height >= h:
                 ret += cur_height - h
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be visiting each height at least once.
-    
+  The runtime complexity here is `O(N)` as since we would be visiting each height at least once.
 - Memory
-    
-    The memory usage is `O(N)`  because we are using lists to store prefix and suffix heights.
-    
+  The memory usage is `O(N)` because we are using lists to store prefix and suffix heights.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

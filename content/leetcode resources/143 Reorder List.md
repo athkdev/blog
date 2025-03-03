@@ -1,10 +1,8 @@
 ---
 title: 143 Reorder List
 tags:
-    - medium
+  - medium
 ---
-
-
 
 The problem requires us to reorder the given linked list in such a way that
 
@@ -13,7 +11,7 @@ L_0 \rightarrow L_1 \rightarrow L_2 \rightarrow L_4 \rightarrow L_{n-1} \rightar
 $$
 
 $$
-L_0 \rightarrow L_{n} \rightarrow L_1 \rightarrow L_{n-1} \rightarrow L_2 \rightarrow L_3 
+L_0 \rightarrow L_{n} \rightarrow L_1 \rightarrow L_{n-1} \rightarrow L_2 \rightarrow L_3
 $$
 
 That means there’s an alternating sequence between the first half and second half of the linkedlist. But, the second half is reversed. Which is why we use a stack datastructure to store that side of the list.
@@ -23,11 +21,10 @@ That means there’s an alternating sequence between the first half and second h
 2. Then iterate till mid and store all elements in a queue or a list (it's fine to not use a datastructure for this, you can just iterate over the nodes)
 3. Then iterate from mid to end and store all elements in a stack
 4. Finally, use a toggle boolean value to pick up element from the queue and the stack at a time
-		4.1. Attach each node to the list
+   4.1. Attach each node to the list
 ```
 
 > Note: the line [`h.next](http://h.next) = null;` is very crucial. Here, it acts as a way to the cycle in the list if any.
-> 
 
 # Code:
 
@@ -53,7 +50,7 @@ class Solution {
 
         ListNode slow = head, fast = head.next;
 
-        ListNode mid = null; 
+        ListNode mid = null;
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
@@ -105,14 +102,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$ since we visit all nodes atleast once.
-    
+  The runtime complexity here is $O(N)$ since we visit all nodes atleast once.
 - Memory
-    
-    The memory usage is $O(N)$ since we use a stack and a queue (optional).
-    
+  The memory usage is $O(N)$ since we use a stack and a queue (optional).
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -1,10 +1,8 @@
 ---
 title: 53 Maximum Subarray
 tags:
-    - medium
+  - medium
 ---
-
-
 
 So, at every new element in the array we make two choices A) either add the new element to the current running sum OR B) start a new current sum altogether. Now, starting a new current sum is equivalent to starting a new sub-array.
 
@@ -27,14 +25,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(N)` as since we would be iterating the array once.
-    
+  The runtime complexity here is `O(N)` as since we would be iterating the array once.
 - Memory
-    
-    The memory usage is `O(1)`
-    
+  The memory usage is `O(1)`
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

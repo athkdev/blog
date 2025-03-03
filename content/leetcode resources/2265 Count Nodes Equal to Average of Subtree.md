@@ -1,10 +1,8 @@
 ---
 title: 2265 Count Nodes Equal to Average of Subtree
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Calculating the average of the entire tree separately and returning is incorrect - putting it out there because the problem can be misconstrued in that manner.
 
@@ -19,7 +17,7 @@ We return a list from our DFS function instead of a singular value since we need
 ```python
 class Solution:
     def averageOfSubtree(self, root: TreeNode) -> int:
-        
+
         def calc(node: TreeNode) -> List[int]:
             if node == None: return [0,0,0]
 
@@ -36,14 +34,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$  since we visit all nodes at least once.
-    
+  The runtime complexity here is $O(N)$ since we visit all nodes at least once.
 - Memory
-    
-    The memory usage is $O (N)$ since we would use the implicit call stack while making recursive tree calls.
-    
+  The memory usage is $O (N)$ since we would use the implicit call stack while making recursive tree calls.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

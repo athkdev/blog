@@ -1,10 +1,8 @@
 ---
 title: 2373 Largest Local Values in a Matrix
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Fairly easy to overthink this problem. I mean no issues if you want to further analyze it and but it’s an easy.
 
@@ -25,7 +23,7 @@ class Solution:
                 for x in range(i, i+3):
                     for y in range(j, j+3):
                         maxLocal[i][j] = max(maxLocal[i][j], grid[x][y])
-                
+
 
         return maxLocal
 ```
@@ -33,14 +31,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N^2)$ , there’s a constant factor of 9 with each iteration, but we don’t usually count the constants.
-    
+  The runtime complexity here is $O(N^2)$ , there’s a constant factor of 9 with each iteration, but we don’t usually count the constants.
 - Memory
-    
-    The memory usage is `O(N-2)` where `N = rows * cols` for the original input matrix.
-    
+  The memory usage is `O(N-2)` where `N = rows * cols` for the original input matrix.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

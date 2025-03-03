@@ -17,7 +17,6 @@ So instead we use a map to represent the tree. Finally, to find the root of the 
 
 Then we subtract all the keys in the map (tree representation) and this children set, to find the root of the tree.
 
-
 # Code
 
 ### Python3
@@ -35,9 +34,9 @@ def createBinaryTree(self, descriptions: List[List[int]]) -> Op tional[TreeNode]
             parent.left = child
         else:
             parent.right = child
-        
+
         children.add(c)
-    
+
     root = (set(m) - set(children)).pop()
 
     return m[root]
@@ -55,4 +54,4 @@ def createBinaryTree(self, descriptions: List[List[int]]) -> Op tional[TreeNode]
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

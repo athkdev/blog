@@ -21,7 +21,7 @@ class Solution:
         count = Counter(A)
 
         res = [key for key, value in count.items() if value == 1]
-        
+
         return '' if len(res) < K else res[K-1]
 ```
 
@@ -37,4 +37,4 @@ class Solution:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

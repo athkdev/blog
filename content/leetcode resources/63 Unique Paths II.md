@@ -8,7 +8,6 @@ tags:
 
 This problem is a sequel to [[/leetcode resources/62 Unique Paths]] - so make sure to check that problem out first.
 
-
 This problem is the same as it's predecessor, just that there are some obstacles in a grid. We just have to modify the part where if there's a obstacle at `grid[i][j]` we stop our search.
 
 # Code
@@ -17,10 +16,10 @@ This problem is the same as it's predecessor, just that there are some obstacles
 
 ```python
   def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
-      
+
       @functools.cache
       def compute(i, j):
-          if i < 0 or j < 0 or obstacleGrid[i][j] == 1:    
+          if i < 0 or j < 0 or obstacleGrid[i][j] == 1:
               '''
               if the obstacle check is happening - that means both the first two checks for i and j were false. Meaning, by the time obstacle is checked - both i and j are valid and in-bound
               '''
@@ -28,11 +27,11 @@ This problem is the same as it's predecessor, just that there are some obstacles
 
           if i == 0 and j == 0:
               return 1  # 1 indicates we reached (0,0)
-          
+
           return compute(i-1, j) + compute(i, j-1)
-      
+
       m, n = len(obstacleGrid), len(obstacleGrid[0])
-      
+
       return compute(m-1, n-1)
 ```
 
@@ -48,4 +47,4 @@ This problem is the same as it's predecessor, just that there are some obstacles
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

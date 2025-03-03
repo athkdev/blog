@@ -1,10 +1,8 @@
 ---
 title: 680 Valid Palindrome II
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Interesting problem with an interesting approach. Well, the problem statement is regular but the approach is nice.
 
@@ -34,21 +32,17 @@ class Solution:
                 l = s[i:~i]; r = s[i+1 : len(s) - i]
 
                 return l == l[::-1] or r == r[::-1]
-        
+
         return True
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N) \; where \; n=len(s)$.
-    
+  The runtime complexity here is $O(N) \; where \; n=len(s)$.
 - Memory
-    
-    Constant space, we aren’t using any extra data structures.
-    
+  Constant space, we aren’t using any extra data structures.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

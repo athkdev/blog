@@ -1,10 +1,8 @@
 ---
 title: 21 Merge Two Sorted Lists
 tags:
-    - medium
+  - medium
 ---
-
-
 
 Very fundamental problem. If you are well-versed with linked lists, it might come of as a very straightforward problem - otherwise, it’s a great learning exercise.
 
@@ -36,7 +34,7 @@ class Solution:
                 res.next=b
                 b=b.next
             res=res.next
-        
+
         while a is not None:
             res.next = a
             a=a.next
@@ -45,21 +43,17 @@ class Solution:
             res.next = b
             b=b.next
             res=res.next
-        
+
         return ans.next
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is `O(len(longer_list))` . This is because - recall the main merger while loop: here we only iterate the length of the shorter list. In the “just-in-case” while loops below, we iterate the rest of the remaining longer list.
-    
+  The runtime complexity here is `O(len(longer_list))` . This is because - recall the main merger while loop: here we only iterate the length of the shorter list. In the “just-in-case” while loops below, we iterate the rest of the remaining longer list.
 - Memory
-    
-    The memory usage is `O(1)`, we only create variables and no such data structures whose size seems to be a function of our input `N`.
-    
+  The memory usage is `O(1)`, we only create variables and no such data structures whose size seems to be a function of our input `N`.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

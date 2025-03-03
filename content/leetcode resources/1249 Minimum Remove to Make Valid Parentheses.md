@@ -7,9 +7,7 @@ tags:
 
 Keep a count variable and keep only the substring that is a 'valid parentheses string' i.e. `count >= 0` where count is incremented for `(` and decremented for `)`.
 
-
-Any parentheses that makes the string 'invalid', just ignore it. 
-
+Any parentheses that makes the string 'invalid', just ignore it.
 
 There need to be two passes, because when going from left to right we can ignore all closing parentheses, but there could be some opening ones that are just extra. For that, make a second pass as well on the reversed string.
 
@@ -19,7 +17,7 @@ There need to be two passes, because when going from left to right we can ignore
 
 ```python
 def minRemoveToMakeValid(self, s: str) -> str:
-    
+
     result = []
     count = 0
 
@@ -40,7 +38,7 @@ def minRemoveToMakeValid(self, s: str) -> str:
             count -= 1
         else:
             filtered.append(c)
-    
+
     return ''.join(reversed(filtered))
 ```
 
@@ -56,4 +54,4 @@ def minRemoveToMakeValid(self, s: str) -> str:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

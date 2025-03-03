@@ -43,4 +43,4 @@ The idea here is pretty straight forward - once we put every alphabet in the sta
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

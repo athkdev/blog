@@ -1,10 +1,8 @@
 ---
 title: 165 Compare Version Numbers
 tags:
-    - medium
+  - medium
 ---
-
-
 
 This problem asks use to compare two version strings and return an answer accordingly. These versions are inspired by software versions where a version string could be “1.0”, “1.0.1”, “2.3.4” and so on.
 
@@ -54,21 +52,17 @@ class Solution:
                 ret = -1
                 break
             i += 1
-        
+
         return ret
 ```
 
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(N)$. This is an example of a linear 1-dimensional DP, where we only iterate the input once. Had it been a nested iteration it could have been $O(N^2)$.
-    
+  The runtime complexity here is $O(N)$. This is an example of a linear 1-dimensional DP, where we only iterate the input once. Had it been a nested iteration it could have been $O(N^2)$.
 - Memory
-    
-    The memory usage is $O(N)$, since we require a dictionary to store already calculated results.
-    
+  The memory usage is $O(N)$, since we require a dictionary to store already calculated results.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

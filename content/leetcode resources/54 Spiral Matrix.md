@@ -35,18 +35,18 @@ This problem really tests our knowledge on implementation - specifically simulat
               '''
               for i in range(top, bottom+1):
                   res.append(A[i][right])
-              
+
               right -= 1
-          
+
           elif direction == 2:
               '''
               going left - implies we are always on the bottom row
               '''
               for i in range(right, left-1, -1):
                   res.append(A[bottom][i])
-              
+
               bottom -= 1
-          
+
           else:
               '''
               going up - implies we are always on the left most row
@@ -54,16 +54,16 @@ This problem really tests our knowledge on implementation - specifically simulat
 
               for i in range(bottom, top-1, -1):
                   res.append(A[i][left])
-              
+
               left += 1
-          
+
 
           '''
           since 4 directions
           '''
           direction = (direction + 1) % 4
-          
-      
+
+
       return res
 ```
 
@@ -79,4 +79,4 @@ This problem really tests our knowledge on implementation - specifically simulat
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

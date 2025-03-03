@@ -1,10 +1,8 @@
 ---
 title: 5 Longest Palindromic Substring
 tags:
-    - medium
+  - medium
 ---
-
-
 
 We want to find the longest palindromic substring, where a substring implies that all characters have to be consecutive, and palindromic implies that the string is mirrored from the center.
 
@@ -31,7 +29,7 @@ class Solution {
                 left = i - (length - 1)/2;
                 right = i + (length/2);
             }
-        }  
+        }
 
         return s.substring(left,right+1);
     }
@@ -50,14 +48,10 @@ class Solution {
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O (n^2)$.
-    
+  The runtime complexity here is $O (n^2)$.
 - Memory
-    
-    The memory usage is $O(1)$ since we don’t use any datastructure.
-    
+  The memory usage is $O(1)$ since we don’t use any datastructure.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

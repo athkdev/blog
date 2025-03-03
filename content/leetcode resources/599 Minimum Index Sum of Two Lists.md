@@ -10,9 +10,7 @@ tags:
 
 We can store all the words from the first list into a hashtable along with their indices as the keys. Then iterate over the other list, and the word in `list2` is already seen in the `list1` - then calculate the current index_sum with `indices[i] + i`.
 
-
 If the current `index_sum` is lower than previous than create a new result list, else if the sum is equal to current lowest, append the word to the result list.
-
 
 # Code
 
@@ -20,7 +18,7 @@ If the current `index_sum` is lower than previous than create a new result list,
 
 ```python
 def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
-    
+
     indices = defaultdict(int)
 
     for i, word in enumerate(list1):
@@ -33,7 +31,7 @@ def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
     for i, word in enumerate(list2):
         if word in indices:
             index_sum = indices[word] + i
-            
+
             if index_sum < least_sum:
                 result = [word]
                 least_sum = index_sum
@@ -55,4 +53,4 @@ def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

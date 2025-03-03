@@ -11,8 +11,7 @@ I made a mistake of using a dictionary and whenever the current frequency is not
 
 You might have noticed the flaw in this - if I have consecutive numbers this would have worked. But since I don't I mustn't update the next key, rather the next **number** must be added with `freq[current] - 1`.
 
-This way, we are making sure that we are accurately counting the number of steps to make array unique - and most importantly - not counting the steps multiple times. 
-
+This way, we are making sure that we are accurately counting the number of steps to make array unique - and most importantly - not counting the steps multiple times.
 
 # Code:
 
@@ -27,13 +26,13 @@ class Solution {
         int maxVal = 0;
         for (int x : arr) {
             maxVal = Math.max(maxVal, x);
-        } 
-        
+        }
+
         int moves = 0;
-        int[] freq = new int[arr.length + maxVal]; 
+        int[] freq = new int[arr.length + maxVal];
         for (int num : arr)
             freq[num]++;
-        
+
         for (int i = 0; i < freq.length - 1; i++) {
             if (freq[i] <= 1) //no need to move anything!
                 continue;
@@ -41,7 +40,7 @@ class Solution {
             moves += freq[i] - 1;
             freq[i + 1] += freq[i] - 1;
         }
-        
+
         return moves;
     }
 }
@@ -58,4 +57,4 @@ class Solution {
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

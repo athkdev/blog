@@ -7,8 +7,7 @@ tags:
 
 [Problem link](https://codeforces.com/contest/1490/problem/D)
 
-
-The problem provides us with an array, and we are required to build a binary tree with a certain criteria. 
+The problem provides us with an array, and we are required to build a binary tree with a certain criteria.
 
 The criteria is that we first choose the maximum element, make that the root of a subtree, the do the same for remainder of the array.
 
@@ -70,4 +69,4 @@ for ans in res:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

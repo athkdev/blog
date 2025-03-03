@@ -1,12 +1,10 @@
 ---
 title: 509 Fibonacci Number (pending) (2)
 tags:
-    - medium
+  - medium
 ---
 
-
-
-[Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/) 
+[Problem link 🔗](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 
 (explaination pending)
 
@@ -54,4 +52,4 @@ public:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

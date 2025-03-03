@@ -2,7 +2,7 @@
 title: 1379 Find a Corresponding Node of a Binary Tree in a Clone of That Tree
 date: 2024-07-22
 tags:
-  - easy 
+  - easy
   - binary tree
 ---
 
@@ -11,7 +11,6 @@ tags:
 This is a straight-forward tree problem. We are provided with two clone trees, and are required to return a corresponding node of type `TreeNode` in `cloned`.
 
 So, we traverse both the trees at the same pace and then once we find the `target` node in `original`, we return the `cloned` node at that instant.
-
 
 # Code
 
@@ -38,4 +37,4 @@ def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) 
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

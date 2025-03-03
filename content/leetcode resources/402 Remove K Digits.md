@@ -1,10 +1,8 @@
 ---
 title: 402 Remove K Digits
 tags:
-    - medium
+  - medium
 ---
-
-
 
 # Code:
 
@@ -19,10 +17,10 @@ class Solution:
                 stack.pop()
                 k -= 1
             stack.append(digit)
-    
+
         # If k is still greater than 0, remove remaining digits from the end
         stack = stack[:-k] if k else stack
-    
+
         # Remove leading zeros
         return ''.join(stack).lstrip('0') or '0'
 ```
@@ -30,14 +28,10 @@ class Solution:
 ### Big O Analysis
 
 - Runtime
-    
-    The runtime complexity here is $O(n) \; where \; n=s.length$.
-    
+  The runtime complexity here is $O(n) \; where \; n=s.length$.
 - Memory
-    
-    The memory usage is $O(1)$. Although we are using an array count, its always going to be of length 26, constant space!.
-    
+  The memory usage is $O(1)$. Although we are using an array count, its always going to be of length 26, constant space!.
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

@@ -13,7 +13,6 @@ PS: This problem is pre-requisite to [[/leetcode resources/2124 Check if All A's
 
 > Make sure to checkout [[/leetcode resources/678 Valid Parenthesis String]] as it uses a similar strategy of counting
 
-
 # Code
 
 ### Python3
@@ -49,4 +48,4 @@ def minimumDeletions(self, s: str) -> int:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)

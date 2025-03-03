@@ -1,12 +1,10 @@
 ---
 title: 746 Min Cost Climbing Stairs
 tags:
-    - medium
+  - medium
 ---
 
-
-
-We need to calculate the minimum cost required to go to climb all the way to the top of the stairs. Now, the criteria as to what counts as climbing is you can either climb one step or two steps at  a time.
+We need to calculate the minimum cost required to go to climb all the way to the top of the stairs. Now, the criteria as to what counts as climbing is you can either climb one step or two steps at a time.
 
 # Code:
 
@@ -35,7 +33,7 @@ class Solution {
 public:
     int min_cost (vector<int>& cost, int cur_ind, unordered_map<int,int>& memo) {
         if (memo.count(cur_ind) == 1) return memo[cur_ind];
-        
+
         if (cur_ind == cost.size()-1) return cost[cur_ind];
         if (cur_ind == cost.size()-2) return cost[cur_ind];
 
@@ -58,4 +56,4 @@ The space complexity is `O(N)` as well, due to the result vector `avgs` we creat
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)
