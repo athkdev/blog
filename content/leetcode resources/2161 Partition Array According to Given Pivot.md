@@ -11,8 +11,6 @@ For the two pointer solution, the idea is that we have a result array of the sam
 
 For the three array solution, do a one pass and keep track of elements that are smaller, greater and equal to the pivot in separate lists. Finally, just extend them to the result array and return the result array.
 
-
-
 # Code
 
 ### Python3 (two pointers)
@@ -76,4 +74,4 @@ def pivotArray(self, N: List[int], P: int) -> List[int]:
 
 — A
 
-[GitHub](https://github.com/AtharvaKamble) | [Twitter](https://twitter.com/AtharvaKamble07)
+[GitHub](https://github.com/athkdev) | [Twitter](https://twitter.com/athkdev)
