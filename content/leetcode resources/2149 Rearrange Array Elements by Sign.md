@@ -1,39 +1,48 @@
 ---
 title: 2149 Rearrange Array Elements by Sign
+date: 2025-03-03
 tags:
   - medium
 ---
 
-We just brute force our way into the matrix, do bound checks for our values and just calculate the required hour glass sum, and finally update our max sum with every iteration.
+Similar to leetcode 86, and leetcode 2161.
+
+Offload the positive and negative elements into separate lists, then merge.
 
 # Code
 
-### Python
+### Python3
 
 ```python
-class Solution:
-    def rearrangeArray(self, nums: List[int]) -> List[int]:
-        pos, neg = 0, 1
+def rearrangeArray(self, nums: List[int]) -> List[int]:
 
-        res = [0 for _ in range(len(nums))]
+    pos, neg = [], []
 
-        for n in nums:
-            if n > 0:
-                res[pos] = n
-                pos += 2
-            if n < 0:
-                res[neg] = n
-                neg += 2
+    result = []
 
-        return res
+    for n in nums:
+        if n >= 0:
+            pos.append(n)
+        else:
+            neg.append(n)
+
+    # merge
+    for a, b in zip(pos, neg):
+        result.append(a)
+        result.append(b)
+
+    return result
 ```
 
 ### Big O Analysis
 
-- Runtime
-  The runtime complexity here is $O(N)$ since we visit all elements atleast once.
-- Memory
-  The memory usage is $O (N)$ since we are creating a new result array.
+- **Runtime**
+
+  The runtime complexity here is $O(N)$ since we are visiting all elements only once.
+
+- **Memory**
+
+  The memory usage is $O(N)$ since we use extra lists to offload positive and negative elements.
 
 — A
 
