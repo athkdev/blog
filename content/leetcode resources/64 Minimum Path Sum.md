@@ -17,6 +17,27 @@ Once we have reduced our problem, we can put into a recursive statement and we a
 ### Python3
 
 ```python
+
+def minPathSum(self, grid: List[List[int]]) -> int:
+  m, n = len(grid), len(grid[0])
+
+  for r in range(m):
+    for c in range(n):
+      if (r, c) == (0, 0):
+        continue
+
+      if r == 0:   # top row
+        grid[r][c] += grid[r][c-1]
+      elif c == 0:   # left row
+        grid[r][c] += grid[r-1][c]
+      else:   # all other rows that are not top or left
+        grid[r][c] += min(grid[r-1][c], grid[r][c-1])
+
+  return grid[m-1][n-1]
+
+```
+
+```python
   def minPathSum(self, grid: List[List[int]]) -> int:
 
 
