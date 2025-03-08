@@ -1,6 +1,6 @@
 ---
 title: 64 Minimum Path Sum
-date: 2024-09-11
+date: 2025-03-08
 tags:
   - medium
   - dynamic programming
