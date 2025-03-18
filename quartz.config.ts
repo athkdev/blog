@@ -20,9 +20,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Geist",
-        body: "Geist",
-        code: "Inconsolata",
+        header: "PT Sans",
+        body: "PT Sans",
+        code: "Ubuntu Mono",
       },
       colors: {
         lightMode: {
