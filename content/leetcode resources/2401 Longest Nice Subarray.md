@@ -1,5 +1,5 @@
 ---
-title: 2401
+title: 2401 Longest Nice Subarray
 date: 2025-03-19
 tags:
   - medium
