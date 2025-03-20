@@ -1,9 +1,8 @@
 ---
 title: 2401
-date: 2024-08-21
+date: 2025-03-19
 tags:
   - medium
-  - sliding window
 ---
 
 # Intuition
@@ -12,7 +11,30 @@ The basic idea for our code is that - `(A + B) & C`. When `A & B == 0`, there ar
 
 Basically, the criteria they have mentioned of bitwise AND of two consecutive elements to be 0, is **_cumulative_**. To check, we can maintain a window sum and shrink window till the new number we are checking does not result in zero.
 
+> Another approach: instead of maintaining a sum to check, use the OR bitwise to add the current element to window, XOR to remove it from current window, and AND bitwise to check if the condition remains satisfied.
+
 # Code
+
+### Python3 (an even better solution)
+
+```python
+def longestNiceSubarray(self, nums: List[int]) -> int:
+
+    res = -math.inf
+    left = 0
+    cur = 0
+
+    for right in range(len(nums)):
+        while cur & nums[right]: # check if condition is still valid
+            cur ^= nums[left]    # remove from current window
+            left += 1
+
+        cur |= nums[right]    # add to current window
+
+        res = max(res, right-left+1)
+
+    return res
+```
 
 ### Python3
 
