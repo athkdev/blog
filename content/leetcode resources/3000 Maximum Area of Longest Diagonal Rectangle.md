@@ -2,7 +2,7 @@
 title: 3000 Maximum Area of Longest Diagonal Rectangle
 date: 2025-03-31
 tags:
-  - medium
+  - easy
 ---
 
 The problem is fairly straightforward, apart from a couple testcases. The logic for when we come across a larger diagonal vs. coming across the same diagonal length - are two different logics.
