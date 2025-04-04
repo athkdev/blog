@@ -1,5 +1,6 @@
 ---
 title: 278 First Bad Version
+date: 2025-04-03
 tags:
   - medium
 ---
@@ -17,6 +18,24 @@ This problem is identical to finding the pivot in a rotated sorted array. Search
 ```
 
 # Code:
+
+### Python
+
+```python
+def firstBadVersion(self, n: int) -> int:
+
+    lo, hi = 1, n
+
+    while lo <= hi:
+        mid = (lo + hi) // 2
+
+        if isBadVersion(mid):
+            hi = mid - 1
+        else:
+            lo = mid + 1
+
+    return lo
+```
 
 ### Java
 
@@ -48,9 +67,9 @@ public class Solution extends VersionControl {
 ### Big O Analysis
 
 - Runtime
-  The runtime complexity here is `O(log N)` - Binary Search!.
+  The runtime complexity here is $O(log N)$ - Binary Search!.
 - Memory
-  The memory usage is `O(1)` since we no linear/non-linear data structure used.
+  The memory usage is $O(1)$ since we don't linear/non-linear data structure used.
 
 — A
 
