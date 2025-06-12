@@ -20,7 +20,7 @@ And keep track of the mapping between the old and the new pointers - this will b
 >
 > Make sure to have a mapping in both directions for reasons you'll understanding while dry running the code.
 
-![Explaination for leetcode 138](images/lc_138.png)
+![Explaination for leetcode 138](leetcode-resources/images/lc_138.png)
 
 # Code
 
