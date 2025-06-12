@@ -18,7 +18,7 @@ Do this till `pointer1 != pointer2`. This works because let the non-intersecting
 
 So, the distance travelled by the first list would be $ A + C + B$ and the second list would be $B + C + A$.
 
-![images/lc_160.png](images/lc_160.png)
+![Explanation for leetcode 160](leetcode-resources/images/lc_160.png)
 
 # Code
 
